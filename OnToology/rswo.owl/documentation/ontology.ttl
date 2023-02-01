@@ -1,0 +1,2073 @@
+@prefix : <http://www.rswo.org/muhyah/ontologies/2022/7/rswo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.rswo.org/muhyah/ontologies/2022/7/rswo#> .
+
+<http://www.rswo.org/muhyah/ontologies/2022/7/rswo> rdf:type owl:Ontology ;
+                                                     <http://purl.org/dc/elements/1.1/contributor> "Baifan Zhou, John G. Breslin, Ali intezar,  Evgeny Kharlamov"@en ;
+                                                     <http://purl.org/dc/elements/1.1/creater> "Muhammad Yahya (University of Galway, Ireland)"@en ;
+                                                     <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                     :copyright "Copyright (c) 2022 Open Applications Group"@en ;
+                                                     rdfs:comment "The most recent version of this file will always be in the GitHub repository https://github.com/MuhammadYahta/rswo"@en ;
+                                                     rdfs:label "Resistance Spot Welding Ontology"@en ;
+                                                     owl:versionInfo "1.0.0"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creater
+<http://purl.org/dc/elements/1.1/creater> rdf:type owl:AnnotationProperty ;
+                                          rdfs:subPropertyOf <http://purl.org/dc/elements/1.1/contributor> .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/maintainer
+<http://purl.org/dc/elements/1.1/maintainer> rdf:type owl:AnnotationProperty ;
+                                             rdfs:subPropertyOf <http://purl.org/dc/elements/1.1/contributor> .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#copyright
+:copyright rdf:type owl:AnnotationProperty ;
+           rdfs:subPropertyOf :rights .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#rights
+:rights rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/dc/terms/hasPart
+<http://purl.org/dc/terms/hasPart> rdf:type owl:ObjectProperty ;
+                                   rdfs:comment "This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of."@en ;
+                                   rdfs:isDefinedBy "A related resource that is included either physically or logically in the described resource."@en ;
+                                   rdfs:label "dcterms:hasPart"@en .
+
+
+###  http://purl.org/dc/terms/isPartOf
+<http://purl.org/dc/terms/isPartOf> rdf:type owl:ObjectProperty ;
+                                    rdfs:comment "This property is intended to be used with non-literal values. This property is an inverse property of Has Part."@en ;
+                                    rdfs:isDefinedBy "A related resource in which the described resource is physically or logically included."@en ;
+                                    rdfs:label "dcterms:isPartOf"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomInteractWith
+:ElectrodeBottomInteractWith rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :InteractWith ;
+                             rdfs:domain :ElectrodeCapBottom ;
+                             rdfs:range :BottomWorkSheet ;
+                             rdfs:comment "relation between Electrode cap bottom and bottom worksheet."@en ;
+                             rdfs:label "Electrode Bottom Interact With"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottomApplyWeldForce
+:ElectrodeCapBottomApplyWeldForce rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf :applyWeldForce ;
+                                  rdfs:domain :ElectrodeCapBottom ;
+                                  rdfs:range :WeldForce ;
+                                  rdfs:comment "Force applied by the bottom electrode."@en ;
+                                  rdfs:label "electrode Cap Bottom Apply Weld Force"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTopApplyWeldForce
+:ElectrodeCapTopApplyWeldForce rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf :applyWeldForce ;
+                               rdfs:domain :ElectrodeCapTop ;
+                               rdfs:range :WeldForce ;
+                               rdfs:comment "Force applied by the top electrode."@en ;
+                               rdfs:label "electrode Cap Top Apply Weld Force"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopInteractWith
+:ElectrodeTopInteractWith rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :InteractWith ;
+                          rdfs:domain :ElectrodeCapTop ;
+                          rdfs:range :TopWorkSheet ;
+                          rdfs:comment "relation between electrode cap top and top worksheet."@en ;
+                          rdfs:label "Electrode Top Interact With"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#InteractWith
+:InteractWith rdf:type owl:ObjectProperty ;
+              rdfs:label "InteractWith"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ObservesCurrent
+:ObservesCurrent rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://www.w3.org/ns/sosa#observes> ;
+                 rdfs:domain :CurrentSensor ;
+                 rdfs:range :ACLinkCurrent ;
+                 rdfs:comment "Relation between a Current Sensor and an Ac Link Current."@en ;
+                 rdfs:label "observes Current"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ObservesPower
+:ObservesPower rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.w3.org/ns/sosa#observes> ;
+               rdfs:domain :PowerSensor ;
+               rdfs:range :Power ;
+               rdfs:comment "Relation between a Power Sensor and power."@en ;
+               rdfs:label "observes Power"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ObservesVoltage
+:ObservesVoltage rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://www.w3.org/ns/sosa#observes> ;
+                 rdfs:domain :VoltageSensor ;
+                 rdfs:range :Voltage ;
+                 rdfs:comment "Relation between a Voltage Sensor and Voltage."@en ;
+                 rdfs:label "observes Voltage"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#applyWeldForce
+:applyWeldForce rdf:type owl:ObjectProperty ;
+                rdfs:comment "The Force/pressure applied for welding"@en ;
+                rdfs:label "apply Weld Force"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#belongsToProductionLine
+:belongsToProductionLine rdf:type owl:ObjectProperty ;
+                         rdfs:domain <https://w3id.org/rgom#Machine> ;
+                         rdfs:range <https://w3id.org/rgom#Line> ;
+                         rdfs:comment "The relation between Machine and Production Line."@en ;
+                         rdfs:label "belongs To Production Line"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasControlModule
+:hasControlModule rdf:type owl:ObjectProperty ;
+                  rdfs:domain :WeldingControlSystem ;
+                  rdfs:range :ControlModule ;
+                  rdfs:comment "relation between welding control system and control module."@en ;
+                  rdfs:label "has Control Module"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasCurrent
+:hasCurrent rdf:type owl:ObjectProperty ;
+            rdfs:domain :WeldForce ;
+            rdfs:range :ElectricCurrent ;
+            rdfs:label "has Current"@en ,
+                       "relation between weld force and electric current."@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasDiameter
+:hasDiameter rdf:type owl:ObjectProperty ;
+             rdfs:domain <https://w3id.org/rgom#Product> ;
+             rdfs:range :Diameter ;
+             rdfs:comment "relation between weld spot and diameter."@en ;
+             rdfs:label "has Diameter"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasDressCount
+:hasDressCount rdf:type owl:ObjectProperty ;
+               rdfs:comment "relation between electrode and dress."@en ;
+               rdfs:label "has Dress Count"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrode
+:hasElectrode rdf:type owl:ObjectProperty ;
+              rdfs:domain :ResistanceSpotWeldingOperation ;
+              rdfs:range :Electrode ;
+              rdfs:comment "relation between resistance spot welding operation and electrode."@en ;
+              rdfs:label "has Electrode"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomDressCount
+:hasElectrodeBottomDressCount rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf :hasDressCount ;
+                              rdfs:domain :ElectrodeCapBottom ;
+                              rdfs:range :ElectrodeBottomDressCount ;
+                              rdfs:comment "relation between electrode cap bottom and electrode bottom dress."@en ;
+                              rdfs:label "has Electrode Bottom Dress Count"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomNoseType
+:hasElectrodeBottomNoseType rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :hasNoseType ;
+                            rdfs:domain :ElectrodeCapBottom ;
+                            rdfs:range :NoseType ;
+                            rdfs:comment "relation between electrode bottom and its nose type."@en ;
+                            rdfs:label "has Electrode Bottom Nose Type"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomWearCount
+:hasElectrodeBottomWearCount rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :hasWearCount ;
+                             rdfs:domain :ElectrodeCapBottom ;
+                             rdfs:range :ElectrodeBottomWearCount ;
+                             rdfs:comment "relation between electrode cap bottom and electrode bottom wear count."@en ;
+                             rdfs:label "has Electrode Bottom Wear Count"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottom
+:hasElectrodeCapBottom rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf <http://purl.org/dc/terms/hasPart> ;
+                       owl:inverseOf :isElectrodeCapBottomOf ;
+                       rdfs:domain :WeldingGunBottom ;
+                       rdfs:range :ElectrodeCapBottom ;
+                       rdfs:comment "The welding gun bottom has part electrode cap bottom."@en ;
+                       rdfs:label "has Electrode Cap Bottom"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTop
+:hasElectrodeCapTop rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <http://purl.org/dc/terms/hasPart> ;
+                    owl:inverseOf :isElectrodeCapTopOf ;
+                    rdfs:domain :WeldingGunTop ;
+                    rdfs:range :ElectrodeCapTop ;
+                    rdfs:comment "The welding gun top has part electrode cap top."@en ;
+                    rdfs:label "has Electrode Cap Top"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopDressCount
+:hasElectrodeTopDressCount rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :hasDressCount ;
+                           rdfs:domain :ElectrodeCapTop ;
+                           rdfs:range :ElectrodeTopDressCount ;
+                           rdfs:comment "relation between  electrode cap top and electrode top dress."@en ;
+                           rdfs:label "has Electrode Top Dress Count"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopNoseType
+:hasElectrodeTopNoseType rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :hasNoseType ;
+                         rdfs:domain :ElectrodeCapTop ;
+                         rdfs:range :NoseType ;
+                         rdfs:comment "relation between electrode top and its nose type."@en ;
+                         rdfs:label "has Electrode Top Nose Type"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopWearCount
+:hasElectrodeTopWearCount rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :hasWearCount ;
+                          rdfs:domain :ElectrodeCapTop ;
+                          rdfs:range :ElectrodeTopWearCount ;
+                          rdfs:comment "relation between electrode cap top and electrode top wear count."@en ;
+                          rdfs:label "has Electrode Top Wear Count"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasEnergy
+:hasEnergy rdf:type owl:ObjectProperty ;
+           rdfs:domain :ResistanceSpotWeldingOperation ;
+           rdfs:range :Energy ;
+           rdfs:comment "relation between resistance spot welding operation and energy."@en ;
+           rdfs:label "has Energy"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasHoldStep
+:hasHoldStep rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasSteps ;
+             rdfs:domain :ResistanceSpotWeldingOperation ;
+             rdfs:range :Hold ;
+             rdfs:comment "relation between resistance spot welding operation and hold step."@en ;
+             rdfs:label "has Hold Step"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasInteraction
+:hasInteraction rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain :ResistanceSpotWeldingOperation ;
+                rdfs:range :PiecePieceInteraction ;
+                rdfs:comment "relation between resistance spot welding operation and the piece piece interaction."@en ;
+                rdfs:label "has Interaction"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfElectrodeBottom
+:hasMaterialResistanceOfElectrodeBottom rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf :hasResistance ;
+                                        rdfs:domain :ResistanceSpotWeldingOperation ;
+                                        rdfs:range :MaterialResistanceOfElectrodeBottom ;
+                                        rdfs:label "has Material Resistance Of Electrode Bottom"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfElectrodeTop
+:hasMaterialResistanceOfElectrodeTop rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf :hasResistance ;
+                                     rdfs:domain :ResistanceSpotWeldingOperation ;
+                                     rdfs:range :MaterialResistanceOfElectrodeTop ;
+                                     rdfs:comment "relation between resistance spot welding operation and material resistance of electrode top."@en ;
+                                     rdfs:label "has Material Resistance Of Electrode Top"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfWorkSheetBottom
+:hasMaterialResistanceOfWorkSheetBottom rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf :hasResistance ;
+                                        rdfs:domain :ResistanceSpotWeldingOperation ;
+                                        rdfs:range :MaterialResistanceOfWorkSheetBottom ;
+                                        rdfs:comment "relation between resistance spot welding operation and material resistance of worksheet bottom."@en ;
+                                        rdfs:label "has Material Resistance Of Worksheet Bottom"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfWorkSheetTop
+:hasMaterialResistanceOfWorkSheetTop rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf :hasResistance ;
+                                     rdfs:domain :ResistanceSpotWeldingOperation ;
+                                     rdfs:range :MaterialResistanceOfWorkSheetTop ;
+                                     rdfs:label "has Material Resistance Of WorkSheet Top"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMeasurementModule
+:hasMeasurementModule rdf:type owl:ObjectProperty ;
+                      rdfs:domain :WeldingControlSystem ;
+                      rdfs:range :MeasuringModule ;
+                      rdfs:comment "relation between welding control system and measuring module."@en ;
+                      rdfs:label "has Measurement Module"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMonitoringModule
+:hasMonitoringModule rdf:type owl:ObjectProperty ;
+                     rdfs:domain :WeldingControlSystem ;
+                     rdfs:range :MonitoringModule ;
+                     rdfs:comment "relation between welding control system and monitoring module."@en ;
+                     rdfs:label "has Monitoring Module"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseType
+:hasNoseType rdf:type owl:ObjectProperty ;
+             rdfs:comment "relation between electrode and its nose type."@en ;
+             rdfs:label "has Nose Type"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperation
+:hasOperation rdf:type owl:ObjectProperty ;
+              rdfs:domain :ResistanceSpotWeldingProcess ;
+              rdfs:range :ResistanceSpotWeldingOperation ;
+              rdfs:comment "relation between resistance spot welding process and resistance spot welding operation."@en ;
+              rdfs:label "has Operation"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationControleModule
+:hasOperationControleModule rdf:type owl:ObjectProperty ;
+                            rdfs:domain :ResistanceSpotWeldingOperation ;
+                            rdfs:range :ControlModule ;
+                            rdfs:comment "relation between resistance spot welding and control module."@en ;
+                            rdfs:label "has Operation Control Module"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationCurrent
+:hasOperationCurrent rdf:type owl:ObjectProperty ;
+                     rdfs:domain :MeasuringModule ;
+                     rdfs:range :ElectricCurrent ;
+                     rdfs:comment "relation between measureing module and electric current."@en ;
+                     rdfs:label "has Operation Current"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationMeasurementModule
+:hasOperationMeasurementModule rdf:type owl:ObjectProperty ;
+                               rdfs:domain :ResistanceSpotWeldingOperation ;
+                               rdfs:range :MeasuringModule ;
+                               rdfs:label "has Operation Measurement Module"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationMonitoringModule
+:hasOperationMonitoringModule rdf:type owl:ObjectProperty ;
+                              rdfs:domain :ResistanceSpotWeldingOperation ;
+                              rdfs:range :MonitoringModule ;
+                              rdfs:comment "relation between resistance spot welding operation and monitoring module."@en ;
+                              rdfs:label "has Operation Monitoring Module"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationPower
+:hasOperationPower rdf:type owl:ObjectProperty ;
+                   rdfs:domain :MeasuringModule ;
+                   rdfs:range :Power ;
+                   rdfs:comment "relation between measuring module and power."@en ;
+                   rdfs:label "has Operation Power"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationQValue
+:hasOperationQValue rdf:type owl:ObjectProperty ;
+                    rdfs:domain :ResistanceSpotWeldingOperation ;
+                    rdfs:range :QValue ;
+                    rdfs:comment "relation between resistance spot welding and q value."@en ;
+                    rdfs:label "has Operation Q Value"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationQualityIndicator
+:hasOperationQualityIndicator rdf:type owl:ObjectProperty ;
+                              rdfs:domain :ResistanceSpotWeldingOperation ;
+                              rdfs:range :OperationQualityIndicator ;
+                              rdfs:comment "relation between resistance spot welding operation and operation quality indicator."@en ;
+                              rdfs:label "has Operation Quality Indicator"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationVoltage
+:hasOperationVoltage rdf:type owl:ObjectProperty ;
+                     rdfs:domain :MeasuringModule ;
+                     rdfs:range :Voltage ;
+                     rdfs:comment "relation between measuring module and voltage."@en ;
+                     rdfs:label "has Operation Voltage"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationWeldProgram
+:hasOperationWeldProgram rdf:type owl:ObjectProperty ;
+                         rdfs:domain :ControlModule ;
+                         rdfs:range :WeldProgram ;
+                         rdfs:comment "relation between control module and weld program."@en ;
+                         rdfs:label "has Operation Weld Program"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPhase
+:hasPhase rdf:type owl:ObjectProperty ;
+          rdfs:domain :WeldingMachine ;
+          rdfs:range :Phase1 ;
+          rdfs:comment "relation between welding machine and phase 1."@en ;
+          rdfs:label "has Phase"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPieceInteraction
+:hasPieceInteraction rdf:type owl:ObjectProperty ;
+                     rdfs:domain :WorkPiece ;
+                     rdfs:range :PiecePieceInteraction ;
+                     rdfs:comment "relation between work piece and piece piece interaction."@en ;
+                     rdfs:label "has Piece Interaction"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasProductQualityIndicator
+:hasProductQualityIndicator rdf:type owl:ObjectProperty ;
+                            rdfs:domain :ResistanceSpotWeldingOperation ;
+                            rdfs:range :QValue ;
+                            rdfs:label "has Product Quality Indicator"@en ,
+                                       "resistance between resistance spot welding operation and q value."@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasQValue
+:hasQValue rdf:type owl:ObjectProperty ;
+           rdfs:domain :MonitoringModule ;
+           rdfs:range :QValue ;
+           rdfs:comment "relation between monitoring module and q value."@en ;
+           rdfs:label "has Q Value"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasRawProduct
+:hasRawProduct rdf:type owl:ObjectProperty ;
+               rdfs:domain :ResistanceSpotWeldingOperation ;
+               rdfs:range :WorkPieceCombination ;
+               rdfs:comment "relation between resistance spot welding operation and workpiece combination."@en ;
+               rdfs:label "has Raw Product"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance
+:hasResistance rdf:type owl:ObjectProperty ;
+               rdfs:label "has Resistance"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistanceBetweenElectrodeBottomAndWorkSheetBottom
+:hasResistanceBetweenElectrodeBottomAndWorkSheetBottom rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf :hasResistance ;
+                                                       rdfs:domain :ResistanceSpotWeldingOperation ;
+                                                       rdfs:range :ContactResistanceBetweenElectrodeBottomAndWorkSheetBottom ;
+                                                       rdfs:comment "relation between resistance spot welding operation and resistance between electrode bottom and worksheet bottom."@en ;
+                                                       rdfs:label "has Resistance Between Electrode Bottom And WorkSheet Bottom"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistanceBetweenElectrodeTopAndWorkSheetTop
+:hasResistanceBetweenElectrodeTopAndWorkSheetTop rdf:type owl:ObjectProperty ;
+                                                 rdfs:subPropertyOf :hasResistance ;
+                                                 rdfs:domain :MeasuringModule ;
+                                                 rdfs:range :ContactResistanceBetweenElectrodeTopAndWorkSheetTop ;
+                                                 rdfs:comment "relation between measuring module and contact resistance between electrode top and worksheet top."@en ;
+                                                 rdfs:label "has Resistance Between Electrode Top And WorkSheet Top"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSensor
+:hasSensor rdf:type owl:ObjectProperty ;
+           rdfs:domain :ResistanceSpotWeldingOperation ;
+           rdfs:range <http://www.w3.org/ns/sosa/Sensor> ;
+           rdfs:comment "relation between resistance spot welding operation and sensor."@en ;
+           rdfs:label "has Sensor"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpatter
+:hasSpatter rdf:type owl:ObjectProperty ;
+            rdfs:domain :ResistanceSpotWeldingOperation ;
+            rdfs:range :Spatter ;
+            rdfs:comment "relation between resistance spot  welding operation and spatter."@en ;
+            rdfs:label "has Spatter"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSqueezeStep
+:hasSqueezeStep rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasSteps ;
+                rdfs:domain :ResistanceSpotWeldingOperation ;
+                rdfs:range :Squeeze ;
+                rdfs:comment "relation between resistance spot welding operation and squeeze."@en ;
+                rdfs:label "has Squeeze Step"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSteps
+:hasSteps rdf:type owl:ObjectProperty ;
+          rdfs:domain :ResistanceSpotWeldingOperation ;
+          rdfs:label "has Step"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasThermalContactConductivity
+:hasThermalContactConductivity rdf:type owl:ObjectProperty ;
+                               rdfs:domain :WorkSheetTopWorkSheetBottomInteraction ;
+                               rdfs:range :ThermalContactConductivity ;
+                               rdfs:comment "relation between worksheet top worksheet bottom interaction and thermal contact conductivity."@en ;
+                               rdfs:label "has Thermal Contact Conductivity"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWearCount
+:hasWearCount rdf:type owl:ObjectProperty ;
+              rdfs:label "has Wear Count"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldCurrent
+:hasWeldCurrent rdf:type owl:ObjectProperty ;
+                rdfs:domain :ResistanceSpotWeldingOperation ;
+                rdfs:range :ElectricCurrent ;
+                rdfs:comment "relation between resistance spot welding operation and electric current"@en ;
+                rdfs:label "has Weld Current"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldCurrentTime
+:hasWeldCurrentTime rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :weldCurrentAtTime ;
+                    rdfs:domain :ElectricCurrent ;
+                    rdfs:range :Time ;
+                    rdfs:comment "relation between electric current and the time."@en ;
+                    rdfs:label "has Weld Current Time"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldForce
+:hasWeldForce rdf:type owl:ObjectProperty ;
+              rdfs:domain :ResistanceSpotWeldingOperation ;
+              rdfs:range :WeldForce ;
+              rdfs:comment "relation between resistance spot welding operation and weld force."@en ;
+              rdfs:label "has Weld Force"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldForceTime
+:hasWeldForceTime rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :weldForceAtTime ;
+                  rdfs:domain :WeldForce ;
+                  rdfs:range :Time ;
+                  rdfs:comment "relatoin between weld force  and time."@en ;
+                  rdfs:label "has Weld Force Time"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgram
+:hasWeldProgram rdf:type owl:ObjectProperty ;
+                rdfs:domain :ControlModule ;
+                rdfs:range :WeldProgram ;
+                rdfs:comment "relation between control module and weld program."@en ;
+                rdfs:label "has Weld Program"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceCurrentSetPoint
+:hasWeldProgramReferenceCurrentSetPoint rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf :hasWeldProgramReferenceSetPoint ;
+                                        rdfs:domain :WeldProgram ;
+                                        rdfs:range :ElectricCurrentSetPoint ;
+                                        rdfs:comment "relation between weld program and electric current set point."@en ;
+                                        rdfs:label "has Weld Program Reference Current Set Point"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceEnergySetPoint
+:hasWeldProgramReferenceEnergySetPoint rdf:type owl:ObjectProperty ;
+                                       rdfs:subPropertyOf :hasWeldProgramReferenceSetPoint ;
+                                       rdfs:domain :WeldProgram ;
+                                       rdfs:range :EnergySetPoint ;
+                                       rdfs:comment "relation between weld program and energy set point."@en ;
+                                       rdfs:label "has Weld Program Reference Energy Set Point"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferencePowerSetPoint
+:hasWeldProgramReferencePowerSetPoint rdf:type owl:ObjectProperty ;
+                                      rdfs:subPropertyOf :hasWeldProgramReferenceSetPoint ;
+                                      rdfs:domain :Program ;
+                                      rdfs:range :PowerSetPoint ;
+                                      rdfs:comment "relation between weld program and power set point."@en ;
+                                      rdfs:label "has Weld Program Reference Power Set Point"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceSetPoint
+:hasWeldProgramReferenceSetPoint rdf:type owl:ObjectProperty ;
+                                 rdfs:label "has Weld Program Reference Set Point"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceVoltageSetPoint
+:hasWeldProgramReferenceVoltageSetPoint rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf :hasWeldProgramReferenceSetPoint ;
+                                        rdfs:domain :WeldProgram ;
+                                        rdfs:range :VoltageSetPoint ;
+                                        rdfs:comment "relation between weld program and voltage set point."@en ;
+                                        rdfs:label "has Weld Program Reference Voltage Set Point"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldSpotQValue
+:hasWeldSpotQValue rdf:type owl:ObjectProperty ;
+                   rdfs:domain :WeldSpot ;
+                   rdfs:range :QValue ;
+                   rdfs:comment "relatoin between weld spot and q value."@en ;
+                   rdfs:label "has Weld Spot Q Value"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldStep
+:hasWeldStep rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasSteps ;
+             rdfs:domain :ResistanceSpotWeldingOperation ;
+             rdfs:range :Weld ;
+             rdfs:comment "relation between resistance spot welding operation and weld."@en ;
+             rdfs:label "has Weld Step"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingArmBottom
+:hasWeldingArmBottom rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://purl.org/dc/terms/hasPart> ;
+                     owl:inverseOf :isWeldingArmBottomOf ;
+                     rdfs:domain :WeldingGunBottom ;
+                     rdfs:range :WeldingArmBottom ;
+                     rdfs:comment "The welding gun bottom has welding arm bottom."@en ;
+                     rdfs:label "has Welding Arm Bottom"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingArmTop
+:hasWeldingArmTop rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://purl.org/dc/terms/hasPart> ;
+                  owl:inverseOf :isWeldingArmTopOf ;
+                  rdfs:domain :WeldingGunTop ;
+                  rdfs:range :WeldingArmTop ;
+                  rdfs:comment "The welding gun top has welding arm top."@en ;
+                  rdfs:label "has Welding Arm Top"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingGunBottom
+:hasWeldingGunBottom rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://purl.org/dc/terms/hasPart> ;
+                     owl:inverseOf :isWeldingGunBottomOf ;
+                     rdfs:domain :WeldingMachine ;
+                     rdfs:range :WeldingGunBottom ;
+                     rdfs:comment "relation between welding machine and welding gun bottom."@en ;
+                     rdfs:label "has Welding Gun Bottom"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingGunTop
+:hasWeldingGunTop rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://purl.org/dc/terms/hasPart> ;
+                  owl:inverseOf :isWeldingGunTopOf ;
+                  rdfs:domain :WeldingMachine ;
+                  rdfs:range :WeldingGunTop ;
+                  rdfs:comment "relation between welding machine  and welding gun top."@en ;
+                  rdfs:label "has Welding Gun Top"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingRobot
+:hasWeldingRobot rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://purl.org/dc/terms/hasPart> ;
+                 owl:inverseOf :isWeldingRobotOf ;
+                 rdfs:domain :WeldingMachine ;
+                 rdfs:range :WeldingRobot ;
+                 rdfs:comment "relation between welding machine and welding robot."@en ;
+                 rdfs:label "has Welding Robot"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheet
+:hasWorkSheet rdf:type owl:ObjectProperty ;
+              rdfs:label "has WorkSheet"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetBottom
+:hasWorkSheetBottom rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasWorkSheet ;
+                    rdfs:domain :WorkPieceCombination ;
+                    rdfs:range :BottomWorkSheet ;
+                    rdfs:label "has WorkSheet Bottom"@en ,
+                               "relation between work piece combination and bottom worksheet"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetBottomThickness
+:hasWorkSheetBottomThickness rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :hasWorkSheetThickness ;
+                             rdfs:domain :BottomWorkSheet ;
+                             rdfs:range :WorkSheetBottomThickness ;
+                             rdfs:comment "relation between bottom worksheet and worksheet bottom thickness."@en ;
+                             rdfs:label "has WorkSheet Bottom Thickness"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetThickness
+:hasWorkSheetThickness rdf:type owl:ObjectProperty ;
+                       rdfs:label "has WorkSheet Thickness"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetTop
+:hasWorkSheetTop rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :hasWorkSheet ;
+                 rdfs:domain :WorkPieceCombination ;
+                 rdfs:range :TopWorkSheet ;
+                 rdfs:comment "relation between work piece combination and top  worksheet"@en ;
+                 rdfs:label "has WorkSheet Top"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetTopThickness
+:hasWorkSheetTopThickness rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :hasWorkSheetThickness ;
+                          rdfs:domain :TopWorkSheet ;
+                          rdfs:range :WorkSheetTopThickness ;
+                          rdfs:comment "relation between top worksheet and worksheet top thickness."@en ;
+                          rdfs:label "has WorkSheet Top Thickness"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkStation
+:hasWorkStation rdf:type owl:ObjectProperty ;
+                rdfs:domain <https://w3id.org/rgom#Line> ;
+                rdfs:range <https://w3id.org/rgom#WorkStation> ;
+                rdfs:comment "relation between production line and workstation."@en ;
+                rdfs:label "has WorkStaion"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isElectrodeCapBottomOf
+:isElectrodeCapBottomOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <http://purl.org/dc/terms/isPartOf> ;
+                        rdfs:domain :ElectrodeCapBottom ;
+                        rdfs:range :WeldingGunBottom ;
+                        rdfs:comment "relation between electrode cap bottom and welding gun bottom."@en ;
+                        rdfs:label "is Electrode Cap Bottom Of"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isElectrodeCapTopOf
+:isElectrodeCapTopOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://purl.org/dc/terms/isPartOf> ;
+                     rdfs:domain :ElectrodeCapTop ;
+                     rdfs:range :WeldingGunTop ;
+                     rdfs:comment "relation between electrode cap top and welding gun top."@en ;
+                     rdfs:label "is Electrode Cap Top Of"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isOperationProductOf
+:isOperationProductOf rdf:type owl:ObjectProperty ;
+                      rdfs:domain :WeldSpot ;
+                      rdfs:range :ResistanceSpotWeldingOperation ;
+                      rdfs:comment "relation between weld spot and resistance spot welding operation."@en ;
+                      rdfs:label "is Operation Product Of"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingArmBottomOf
+:isWeldingArmBottomOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf <http://purl.org/dc/terms/isPartOf> ;
+                      rdfs:domain :WeldingArmBottom ;
+                      rdfs:range :WeldingGunBottom ;
+                      rdfs:comment "relation between welding arm bottom and welding gun bottom."@en ;
+                      rdfs:label "is Welding Arm Bottom Of"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingArmTopOf
+:isWeldingArmTopOf rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://purl.org/dc/terms/isPartOf> ;
+                   rdfs:domain :WeldingArmTop ;
+                   rdfs:range :WeldingGunTop ;
+                   rdfs:comment "relation between welding arm top and welding gun top."@en ;
+                   rdfs:label "is Welding Arm Top Of"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingGunBottomOf
+:isWeldingGunBottomOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf <http://purl.org/dc/terms/isPartOf> ;
+                      rdfs:domain :WeldingGunBottom ;
+                      rdfs:range :WeldingMachine ;
+                      rdfs:comment "relation between welding gun bottom and welding machine."@en ;
+                      rdfs:label "is Welding Gun Bottom  Of"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingGunTopOf
+:isWeldingGunTopOf rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://purl.org/dc/terms/isPartOf> ;
+                   rdfs:domain :WeldingGunTop ;
+                   rdfs:range :WeldingMachine ;
+                   rdfs:comment "relation between welding gun top and welding machine."@en ;
+                   rdfs:label "is Welding Gun Top  Of"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingRobotOf
+:isWeldingRobotOf rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://purl.org/dc/terms/isPartOf> ;
+                  rdfs:domain :WeldingRobot ;
+                  rdfs:range :WeldingMachine ;
+                  rdfs:comment "relation between welding tobot and welding machine."@en ;
+                  rdfs:label "is Welding Robot Of"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#weldCurrentAtTime
+:weldCurrentAtTime rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Time ;
+                   rdfs:range :ElectricCurrent ;
+                   rdfs:comment "relation between  the time andelectric current."@en ;
+                   rdfs:label "weld Currrent At Time"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#weldForceAtTime
+:weldForceAtTime rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Time ;
+                 rdfs:range :WeldForce ;
+                 rdfs:comment "relatoin between the  time and weld force ."@en ;
+                 rdfs:label "weld Force At Time"@en .
+
+
+###  http://www.w3.org/ns/sosa#observes
+<http://www.w3.org/ns/sosa#observes> rdf:type owl:ObjectProperty ;
+                                     rdfs:comment "relation between a Sensor and an ObservableProperty that it is capable of sensing"@en ;
+                                     rdfs:label "observes"@en .
+
+
+###  https://w3id.org/rgom#isPerformedBy
+<https://w3id.org/rgom#isPerformedBy> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain :ResistanceSpotWeldingOperation ;
+                                      rdfs:range <https://w3id.org/rgom#Part> ;
+                                      rdfs:comment "relation between resistance spot welding operation and machine part."@en ;
+                                      rdfs:label "is Performed By"@en .
+
+
+###  https://w3id.org/rgom#performsProcess
+<https://w3id.org/rgom#performsProcess> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain :WeldingMachine ;
+                                        rdfs:range :ResistanceSpotWeldingProcess ;
+                                        rdfs:comment "Relation between Welding Machine and Resistance Spot Welding Process."@en ;
+                                        rdfs:label "performsProcess"@en .
+
+
+###  https://www.w3.org/TR/owl-time/#time:hasTime
+<https://www.w3.org/TR/owl-time/#time:hasTime> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain :ResistanceSpotWeldingOperation ;
+                                               rdfs:range <http://www.w3.org/2006/time#OperationTime> ;
+                                               rdfs:comment "Supports the association of a temporal entity (instant or interval) to any thing."@en ;
+                                               rdfs:label "time:hasTime"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#CurrentControlModeStatusText
+:CurrentControlModeStatusText rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :ControlModule ;
+                              rdfs:range xsd:string .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasAdditionalProcessControlStatus
+:hasAdditionalProcessControlStatus rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain :ControlModule ;
+                                   rdfs:range xsd:float .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasAdditionalProcessControlStatusText
+:hasAdditionalProcessControlStatusText rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain :ControlModule ;
+                                       rdfs:range xsd:string .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasBottomElectrodeWeldForce
+:hasBottomElectrodeWeldForce rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :WeldForce .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasBottomWorkSheetId
+:hasBottomWorkSheetId rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :BottomWorkSheet ;
+                      rdfs:range xsd:integer .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasCurrentControlModeStatus
+:hasCurrentControlModeStatus rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :ControlModule ;
+                             rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasCurrentSetPoint
+:hasCurrentSetPoint rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :hasReferenceSetPoint ;
+                    rdfs:domain :ElectricCurrentSetPoint ;
+                    rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectricCurrentUnit
+:hasElectricCurrentUnit rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :hasUnit ;
+                        rdfs:domain :ACLinkCurrent ;
+                        rdfs:range xsd:string .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomNoseLength
+:hasElectrodeBottomNoseLength rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf :hasNoseLength ;
+                              rdfs:domain :NoseType ;
+                              rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomNoseTypeName
+:hasElectrodeBottomNoseTypeName rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf :hasNoseTypeName ;
+                                rdfs:domain :NoseType ;
+                                rdfs:range xsd:string .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomWaterHoleDiameter
+:hasElectrodeBottomWaterHoleDiameter rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf :hasWaterHoleDiameter ;
+                                     rdfs:domain :ElectrodeCapBottom ;
+                                     rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomWeldFaceDiameter
+:hasElectrodeBottomWeldFaceDiameter rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf :hasWeldFaceDiameter ;
+                                    rdfs:domain :ElectrodeCapBottom ;
+                                    rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottomDressCount
+:hasElectrodeCapBottomDressCount rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf :hasElectrodeCapDressCount ;
+                                 rdfs:domain :ElectrodeBottomDressCount ;
+                                 rdfs:range xsd:integer .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottomNumber
+:hasElectrodeCapBottomNumber rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :ElectrodeCapBottom ;
+                             rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottomWearCountNumber
+:hasElectrodeCapBottomWearCountNumber rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf :hasElectrodeCapWearCount ;
+                                      rdfs:domain :ElectrodeBottomWearCount ;
+                                      rdfs:range xsd:integer .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapDressCount
+:hasElectrodeCapDressCount rdf:type owl:DatatypeProperty .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTopDressCount
+:hasElectrodeCapTopDressCount rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf :hasElectrodeCapDressCount ;
+                              rdfs:domain :ElectrodeTopDressCount ;
+                              rdfs:range xsd:integer .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTopNumber
+:hasElectrodeCapTopNumber rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :ElectrodeCapTop ;
+                          rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTopWearCountNumber
+:hasElectrodeCapTopWearCountNumber rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf :hasElectrodeCapWearCount ;
+                                   rdfs:domain :ElectrodeTopWearCount ;
+                                   rdfs:range xsd:integer .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapWearCount
+:hasElectrodeCapWearCount rdf:type owl:DatatypeProperty .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopNoseLength
+:hasElectrodeTopNoseLength rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :hasNoseLength ;
+                           rdfs:domain :NoseType ;
+                           rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopNoseTypeName
+:hasElectrodeTopNoseTypeName rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf :hasNoseTypeName ;
+                             rdfs:domain :NoseType ;
+                             rdfs:range xsd:string .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopWaterHoleDiameter
+:hasElectrodeTopWaterHoleDiameter rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf :hasWaterHoleDiameter ;
+                                  rdfs:domain :ElectrodeCapTop ;
+                                  rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopWeldFaceDiameter
+:hasElectrodeTopWeldFaceDiameter rdf:type owl:DatatypeProperty ;
+                                 rdfs:subPropertyOf :hasWeldFaceDiameter ;
+                                 rdfs:domain :ElectrodeCapTop ;
+                                 rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasEnergySetPoint
+:hasEnergySetPoint rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :hasReferenceSetPoint ;
+                   rdfs:domain :EnergySetPoint ;
+                   rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasEnergyUnit
+:hasEnergyUnit rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :hasUnit ;
+               rdfs:domain :Energy ;
+               rdfs:range xsd:string .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasHoldTime
+:hasHoldTime rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Hold .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMeasurementStatus
+:hasMeasurementStatus rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :MeasuringModule ;
+                      rdfs:range xsd:integer .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMeasurementStatusText
+:hasMeasurementStatusText rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :MeasuringModule ;
+                          rdfs:range xsd:string .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMonitorState
+:hasMonitorState rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :MonitoringModule ;
+                 rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMonitorStateText
+:hasMonitorStateText rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :MonitoringModule ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseLength
+:hasNoseLength rdf:type owl:DatatypeProperty .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseTypeName
+:hasNoseTypeName rdf:type owl:DatatypeProperty .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPhasePower
+:hasPhasePower rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Phase1 ;
+               rdfs:range xsd:double .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerSetPoint
+:hasPowerSetPoint rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :hasReferenceSetPoint ;
+                  rdfs:domain :PowerSetPoint ;
+                  rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerStatus
+:hasPowerStatus rdf:type owl:DatatypeProperty ;
+                rdfs:domain :MonitoringModule ;
+                rdfs:range xsd:integer .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerStatusText
+:hasPowerStatusText rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :MonitoringModule ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerUnit
+:hasPowerUnit rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :hasUnit ;
+              rdfs:domain :Power ;
+              rdfs:range xsd:string .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasProcessControlStatus
+:hasProcessControlStatus rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :ControlModule ;
+                         rdfs:range xsd:integer .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasProcessControlStatusText
+:hasProcessControlStatusText rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :ControlModule ;
+                             rdfs:range xsd:string .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPropertyEnergy
+:hasPropertyEnergy rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf <http://www.w3.org/ns/sosa/hasProperty> ;
+                   rdfs:domain :Energy ;
+                   rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPropertyResistance
+:hasPropertyResistance rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf <http://www.w3.org/ns/sosa/hasProperty> ;
+                       rdfs:domain :ContactResistanceBetweenElectrodeTopAndWorkSheetTop ;
+                       rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasQValueActual
+:hasQValueActual rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :QValue ;
+                 rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasRSWOperationID
+:hasRSWOperationID rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :ResistanceSpotWeldingOperation ;
+                   rdfs:range xsd:integer .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasReferenceSetPoint
+:hasReferenceSetPoint rdf:type owl:DatatypeProperty .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistanceUnit
+:hasResistanceUnit rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :hasUnit ;
+                   rdfs:domain :ContactResistanceBetweenElectrodeBottomAndWorkSheetBottom ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpatterOccurTime
+:hasSpatterOccurTime rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Spatter .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpotRepetition
+:hasSpotRepetition rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :WeldSpot ;
+                   rdfs:range xsd:integer .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpotRepetitionStatus
+:hasSpotRepetitionStatus rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :MonitoringModule ;
+                         rdfs:range xsd:integer .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpotRepetitionStatusText
+:hasSpotRepetitionStatusText rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :MonitoringModule ;
+                             rdfs:range xsd:string .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSqueezeTime
+:hasSqueezeTime rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Squeeze .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasThickness
+:hasThickness rdf:type owl:DatatypeProperty .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasTopElectrodeWeldForce
+:hasTopElectrodeWeldForce rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :WeldForce .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasTopWorkSheetId
+:hasTopWorkSheetId rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :TopWorkSheet ;
+                   rdfs:range xsd:integer .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasUnit
+:hasUnit rdf:type owl:DatatypeProperty .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasVoltageSetPoint
+:hasVoltageSetPoint rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :hasReferenceSetPoint ;
+                    rdfs:domain :VoltageSetPoint ;
+                    rdfs:range xsd:decimal .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasVoltageUnit
+:hasVoltageUnit rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :hasUnit ;
+                rdfs:domain :Voltage ;
+                rdfs:range xsd:string .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWaterHoleDiameter
+:hasWaterHoleDiameter rdf:type owl:DatatypeProperty .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldFaceDiameter
+:hasWeldFaceDiameter rdf:type owl:DatatypeProperty .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldSpotDiameter
+:hasWeldSpotDiameter rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :WeldSpot .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldTime
+:hasWeldTime rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Weld .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingMachineName
+:hasWeldingMachineName rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :WeldingMachine ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingProgramID
+:hasWeldingProgramID rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :WeldProgram ;
+                     rdfs:range xsd:integer .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingProgramNumber
+:hasWeldingProgramNumber rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :WeldProgram ;
+                         rdfs:range xsd:integer .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetBottomThicknessValue
+:hasWorkSheetBottomThicknessValue rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf :hasThickness ;
+                                  rdfs:domain :WorkSheetBottomThickness .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetTopThicknessValue
+:hasWorkSheetTopThicknessValue rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf :hasThickness ;
+                               rdfs:domain :WorkSheetTopThickness .
+
+
+###  http://www.w3.org/2006/time#hasDateTimeStamp
+<http://www.w3.org/2006/time#hasDateTimeStamp> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://www.w3.org/2006/time#OperationTime> ;
+                                               rdfs:range xsd:dateTime .
+
+
+###  http://www.w3.org/ns/sosa#hasPropertyCurrent
+<http://www.w3.org/ns/sosa#hasPropertyCurrent> rdf:type owl:DatatypeProperty ;
+                                               rdfs:subPropertyOf <http://www.w3.org/ns/sosa/hasProperty> ;
+                                               rdfs:domain :ACLinkCurrent ;
+                                               rdfs:range xsd:decimal .
+
+
+###  http://www.w3.org/ns/sosa#hasPropertyPower
+<http://www.w3.org/ns/sosa#hasPropertyPower> rdf:type owl:DatatypeProperty ;
+                                             rdfs:subPropertyOf <http://www.w3.org/ns/sosa/hasProperty> ;
+                                             rdfs:domain :Power ;
+                                             rdfs:range xsd:decimal .
+
+
+###  http://www.w3.org/ns/sosa#hasPropertyVoltage
+<http://www.w3.org/ns/sosa#hasPropertyVoltage> rdf:type owl:DatatypeProperty ;
+                                               rdfs:subPropertyOf <http://www.w3.org/ns/sosa/hasProperty> ;
+                                               rdfs:domain :Voltage ;
+                                               rdfs:range xsd:decimal .
+
+
+###  http://www.w3.org/ns/sosa/hasProperty
+<http://www.w3.org/ns/sosa/hasProperty> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  NCIT:C68547
+<NCIT:C68547> rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25709> ;
+              rdfs:comment "The unit of pressure."@en ;
+              rdfs:label "Joules"@en .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C25709
+<http://purl.obolibrary.org/obo/NCIT_C25709> rdf:type owl:Class ;
+                                             rdfs:comment "Unit of measure."@en ;
+                                             rdfs:label "Unit Of Measure"@en .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C28251
+<http://purl.obolibrary.org/obo/NCIT_C28251> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25709> ;
+                                             rdfs:comment "Millimeter."@en ;
+                                             rdfs:label "MilliMeter"@en .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C42554
+<http://purl.obolibrary.org/obo/NCIT_C42554> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25709> ;
+                                             rdfs:comment "The unit of resistance."@en ;
+                                             rdfs:label "Ohm"@en .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C48161
+<http://purl.obolibrary.org/obo/NCIT_C48161> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25709> ;
+                                             rdfs:comment "Force."@en ;
+                                             rdfs:label "Force"@en .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C48500
+<http://purl.obolibrary.org/obo/NCIT_C48500> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25709> ;
+                                             rdfs:comment "Inch unit"@en ;
+                                             rdfs:label "Inch"@en .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C67275
+<http://purl.obolibrary.org/obo/NCIT_C67275> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25709> ;
+                                             rdfs:comment "The unit of power."@en ;
+                                             rdfs:label "Watts"@en .
+
+
+###  http://www.ebi.ac.uk/swo/SWO_0000001
+<http://www.ebi.ac.uk/swo/SWO_0000001> rdf:type owl:Class ;
+                                       rdfs:comment "Software is any set of machine-readable instructions (most often in the form of a computer program) that conform to a given syntax (sometimes referred to as a language) that is interpretable by a given processor and that directs a computer's processor to perform specific operations."@en ;
+                                       rdfs:label "Software"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ACLinkCurrent
+:ACLinkCurrent rdf:type owl:Class ;
+               rdfs:subClassOf :ElectricCurrent ;
+               rdfs:comment "AC-Link current."@en ;
+               rdfs:label "AC Link Current"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Ampere
+:Ampere rdf:type owl:Class ;
+        rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C25709> ;
+        rdfs:comment "The SI unit of current."@en ;
+        rdfs:label "Amphere"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Area
+:Area rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+      rdfs:comment "The quantity that expresses the extent of a two-dimensional figure or shape, or planar lamina, in the plane."@en ;
+      rdfs:label "Area"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Assembly
+:Assembly rdf:type owl:Class ;
+          rdfs:subClassOf :WorkPieceCombination ;
+          rdfs:comment "Assembly"@en ;
+          rdfs:label "Assembly"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#BottomWorkSheet
+:BottomWorkSheet rdf:type owl:Class ;
+                 rdfs:subClassOf :WorkPiece ;
+                 rdfs:comment "Bottom worksheet"@en ;
+                 rdfs:label "Bottom WorkSheet"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactArea
+:ContactArea rdf:type owl:Class ;
+             rdfs:subClassOf :Area ;
+             rdfs:comment "An area of contact."@en ;
+             rdfs:label "Contact Area"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactHeatTransferCoefficient
+:ContactHeatTransferCoefficient rdf:type owl:Class ;
+                                rdfs:subClassOf :HeatTransferCoefficient ;
+                                rdfs:comment "Contact heat transfer coefficient."@en ;
+                                rdfs:label "Contact Heat Transfer Coefficient"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeBottomAndWorkSheetBottom
+:ContactResistanceBetweenElectrodeBottomAndWorkSheetBottom rdf:type owl:Class ;
+                                                           rdfs:subClassOf :Resistance ;
+                                                           rdfs:comment "The resistance caused by the passage of electric current in the workpiece."@en ;
+                                                           rdfs:label "Contact Resistance Between ElectrodeBottom And WorkSheetBottom"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeTopAndWorkSheetTop
+:ContactResistanceBetweenElectrodeTopAndWorkSheetTop rdf:type owl:Class ;
+                                                     rdfs:subClassOf :Resistance ;
+                                                     rdfs:comment "The resistance caused by the passage of electric current in the workpiece."@en ;
+                                                     rdfs:label "Contact Resistance Between ElectrodeTop And WorkSheet Top"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule
+:ControlModule rdf:type owl:Class ;
+               rdfs:subClassOf :FunctionalModule ;
+               rdfs:comment "Control module."@en ;
+               rdfs:label "Control Module"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlSystem
+:ControlSystem rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.ebi.ac.uk/swo/SWO_0000001> ;
+               rdfs:comment "Control system"@en ;
+               rdfs:label "Control System"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Count
+:Count rdf:type owl:Class ;
+       rdfs:subClassOf <https://w3id.org/rgom#ContextualData> ;
+       rdfs:comment "a number of occurance of a thing."@en ;
+       rdfs:label "Count"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#CurrentSensor
+:CurrentSensor rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+               rdfs:comment "A current sensor is a device that detects electric current in a wire and generates a signal proportional to that current. The generated signal could be analog voltage or current or a digital output. The generated signal can be then used to display the measured current in an ammeter, or can be stored for further analysis in a data acquisition system, or can be used for the purpose of control."@en ;
+               rdfs:label "Current Sensor"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#DCLinkCurrent
+:DCLinkCurrent rdf:type owl:Class ;
+               rdfs:subClassOf :ElectricCurrent ;
+               rdfs:comment "DC-Link current."@en ;
+               rdfs:label "DC Link Current"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Diameter
+:Diameter rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+          rdfs:comment "Diameter."@en ;
+          rdfs:label "Diameter"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#DressCount
+:DressCount rdf:type owl:Class ;
+            rdfs:subClassOf :Count ;
+            rdfs:comment "Dress count."@en ;
+            rdfs:label "Dress Count"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Dressing
+:Dressing rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/rgom#Maintenance> ;
+          rdfs:isDefinedBy "Process of dressing."@en ;
+          rdfs:label "Dressing"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent
+:ElectricCurrent rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                 rdfs:comment "Electric current supplied in welding."@en ;
+                 rdfs:label "Electric Current"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrentSetPoint
+:ElectricCurrentSetPoint rdf:type owl:Class ;
+                         rdfs:subClassOf :ReferenceSetPoint ;
+                         rdfs:label "Electric Current Set Point"@en ,
+                                    "The reference value set for electric current"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Electrode
+:Electrode rdf:type owl:Class ;
+           rdfs:subClassOf <https://w3id.org/rgom#Part> ;
+           owl:disjointWith :WeldingRobot ;
+           rdfs:comment "Electrode."@en ;
+           rdfs:label "Electrode"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomDressCount
+:ElectrodeBottomDressCount rdf:type owl:Class ;
+                           rdfs:subClassOf :DressCount ;
+                           rdfs:comment "Dressings for electrode bottom."@en ;
+                           rdfs:label "Electrode Bottom Dress Count"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomWearCount
+:ElectrodeBottomWearCount rdf:type owl:Class ;
+                          rdfs:subClassOf :WearCount ;
+                          rdfs:comment "wear occured  for electrode bottom."@en ;
+                          rdfs:label "Electrode Bottom Wear Count"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomWorksheetBottomInteraction
+:ElectrodeBottomWorksheetBottomInteraction rdf:type owl:Class ;
+                                           rdfs:subClassOf :MachinePartPieceInteraction .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom
+:ElectrodeCapBottom rdf:type owl:Class ;
+                    rdfs:subClassOf :Electrode ;
+                    rdfs:comment "Electrode cap bottom"@en ;
+                    rdfs:label "Electrode Cap Bottom"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop
+:ElectrodeCapTop rdf:type owl:Class ;
+                 rdfs:subClassOf :Electrode ;
+                 rdfs:comment "Electrode cap top."@en ;
+                 rdfs:label "Electrode Cap Top"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopDressCount
+:ElectrodeTopDressCount rdf:type owl:Class ;
+                        rdfs:subClassOf :DressCount ;
+                        rdfs:comment "Dressings for electrode top."@en ;
+                        rdfs:label "Electrode Top Dress Count"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopWearCount
+:ElectrodeTopWearCount rdf:type owl:Class ;
+                       rdfs:subClassOf :WearCount ;
+                       rdfs:comment "wear occured for electrode top."@en ;
+                       rdfs:label "Electrode Top Wear Count"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopWorksheetTopInteraction
+:ElectrodeTopWorksheetTopInteraction rdf:type owl:Class ;
+                                     rdfs:subClassOf :MachinePartPieceInteraction .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Energy
+:Energy rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+        rdfs:label "Energy"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#EnergySetPoint
+:EnergySetPoint rdf:type owl:Class ;
+                rdfs:subClassOf :ReferenceSetPoint ;
+                rdfs:comment "The reference value set for energy"@en ;
+                rdfs:label "Energy Set Point"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FrictionCoefficient
+:FrictionCoefficient rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                     rdfs:comment "The dimensionless scalar value which describes the ratio of the force of friction between two bodies and the force pressing them together."@en ;
+                     rdfs:label "Friction Coefficient"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FunctionalModule
+:FunctionalModule rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.ebi.ac.uk/swo/SWO_0000001> ;
+                  rdfs:comment "Functional module."@en ;
+                  rdfs:label "Functional Module"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#HeatTransferCoefficient
+:HeatTransferCoefficient rdf:type owl:Class ;
+                         rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                         rdfs:comment "The proportionality constant between the heat flux and the thermodynamic driving force for the flow of heat (i.e., the temperature difference)."@en ;
+                         rdfs:label "Heat Transfer Coefficient"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Hold
+:Hold rdf:type owl:Class ;
+      rdfs:subClassOf :OperationSteps ;
+      rdfs:comment "The activity inwhich pieces are hold to interact with each other."@en ;
+      rdfs:label "Hold"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Interaction
+:Interaction rdf:type owl:Class ;
+             rdfs:comment "Interaction between something."@en ;
+             rdfs:label "Interaction"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MachinePartPieceInteraction
+:MachinePartPieceInteraction rdf:type owl:Class ;
+                             rdfs:subClassOf :Interaction ;
+                             rdfs:comment "The interaction between Machine Part and Piece"@en ;
+                             rdfs:label "Machine Part Piece Interaction"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfElectrodeBottom
+:MaterialResistanceOfElectrodeBottom rdf:type owl:Class ;
+                                     rdfs:subClassOf :Resistance ;
+                                     rdfs:comment "Material resistance of electrode bottom."@en ;
+                                     rdfs:label "Material Resistance Of Electrode Bottom"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfElectrodeTop
+:MaterialResistanceOfElectrodeTop rdf:type owl:Class ;
+                                  rdfs:subClassOf :Resistance ;
+                                  rdfs:comment "Material resistance of electrode top."@en ;
+                                  rdfs:label "Material Resistance Of Electrode Top"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfWorkSheetBottom
+:MaterialResistanceOfWorkSheetBottom rdf:type owl:Class ;
+                                     rdfs:subClassOf :Resistance ;
+                                     rdfs:comment "Material resistance of Worksheet bottom."@en ;
+                                     rdfs:label "Material Resistance Of WorkSheetBottom"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfWorkSheetTop
+:MaterialResistanceOfWorkSheetTop rdf:type owl:Class ;
+                                  rdfs:subClassOf :Resistance ;
+                                  rdfs:comment "Material resistance of Worksheet top."@en ;
+                                  rdfs:label "Material Resistance Of WorkSheet Top"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule
+:MeasuringModule rdf:type owl:Class ;
+                 rdfs:subClassOf :FunctionalModule ;
+                 rdfs:comment "Measuring module."@en ;
+                 rdfs:label "Measuring Module"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule
+:MonitoringModule rdf:type owl:Class ;
+                  rdfs:subClassOf :FunctionalModule ;
+                  rdfs:comment "Monitoring module."@en ;
+                  rdfs:label "Monitoring Module"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType
+:NoseType rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+          rdfs:label "Nose Type"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Operation
+:Operation rdf:type owl:Class ;
+           rdfs:comment "Operation"@en ;
+           rdfs:label "Operation"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationQualityIndicator
+:OperationQualityIndicator rdf:type owl:Class ;
+                           rdfs:subClassOf :ProductQualityIndicator ;
+                           rdfs:comment "Quality indicator related to an operation."@en ;
+                           rdfs:label "Operation Quality Indicator"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationSteps
+:OperationSteps rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                rdfs:comment "Sets of actvities involve in an operations"@en ;
+                rdfs:label "Operation Steps"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Phase1
+:Phase1 rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+        rdfs:comment "Phase 1."@en ;
+        rdfs:label "Phase 1"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity
+:PhysicalEntity rdf:type owl:Class ;
+                rdfs:comment "A tangible thing"@en ;
+                rdfs:label "Physical Entity"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PiecePieceInteraction
+:PiecePieceInteraction rdf:type owl:Class ;
+                       rdfs:subClassOf :Interaction ;
+                       rdfs:comment "Interaction between work sheets (Work pieces)"@en ;
+                       rdfs:label "Piece Piece Interaction"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Power
+:Power rdf:type owl:Class ;
+       rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+       rdfs:comment "Power."@en ;
+       rdfs:label "Power"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSensor
+:PowerSensor rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+             rdfs:comment "50Hz / 60Hz"@en ;
+             rdfs:label "Power Sensor"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSetPoint
+:PowerSetPoint rdf:type owl:Class ;
+               rdfs:subClassOf :ReferenceSetPoint ;
+               rdfs:comment "The reference value set for power"@en ;
+               rdfs:label "Power Set Point"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ProductQualityIndicator
+:ProductQualityIndicator rdf:type owl:Class ;
+                         rdfs:subClassOf :QualityIndicator ;
+                         rdfs:comment "Quality indicator related to a product."@en ;
+                         rdfs:label "Product Quality Indicator"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Program
+:Program rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.ebi.ac.uk/swo/SWO_0000001> ;
+         rdfs:comment "Program."@en ;
+         rdfs:label "Program"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QValue
+:QValue rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+        rdfs:comment "A Bosch value to measure the quality of weld"@en ;
+        rdfs:label "Q-Value"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QualityIndicator
+:QualityIndicator rdf:type owl:Class ;
+                  rdfs:comment "Quality indicator of an operation and product"@en ;
+                  rdfs:label "Quality Indicator"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ReferenceSetPoint
+:ReferenceSetPoint rdf:type owl:Class ;
+                   rdfs:comment "Reference set point"@en ;
+                   rdfs:label "Reference Set Point"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance
+:Resistance rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+            rdfs:comment "Resistance."@en ;
+            rdfs:label "Resistance"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSetPoint
+:ResistanceSetPoint rdf:type owl:Class ;
+                    rdfs:subClassOf :ReferenceSetPoint ;
+                    rdfs:comment "The reference value set for Resistance"@en ;
+                    rdfs:label "Resistance Set Point"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation
+:ResistanceSpotWeldingOperation rdf:type owl:Class ;
+                                rdfs:subClassOf :Operation ;
+                                rdfs:comment "Resistance Spot Welding (RSW) Operation"@en ;
+                                rdfs:label "RSW Operation"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingProcess
+:ResistanceSpotWeldingProcess rdf:type owl:Class ;
+                              rdfs:subClassOf <https://w3id.org/rgom#AssemblingProcess> ;
+                              rdfs:comment "Resistance spot welding process."@en ;
+                              rdfs:label "Resistance Spot Welding Process"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Spatter
+:Spatter rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+         rdfs:comment "splashes produced during the welding"@en ;
+         rdfs:label "Spatter"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Squeeze
+:Squeeze rdf:type owl:Class ;
+         rdfs:subClassOf :OperationSteps ;
+         rdfs:comment "The activites inwhich force is applied to the pieces."@en ;
+         rdfs:label "Squeeze"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TensileShearStrength
+:TensileShearStrength rdf:type owl:Class ;
+                      rdfs:subClassOf :QualityIndicator ;
+                      rdfs:comment "Tensile shear strength."@en ;
+                      rdfs:label "Tensile Shear Strength"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ThermalConductivity
+:ThermalConductivity rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                     rdfs:comment "The ability to conduct heat."@en ;
+                     rdfs:label "Thermal Conductivity"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ThermalContactConductivity
+:ThermalContactConductivity rdf:type owl:Class ;
+                            rdfs:subClassOf :ThermalConductivity ;
+                            rdfs:label "Thermal Contact Conductivity"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Thickness
+:Thickness rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+           rdfs:comment "thickness."@en ;
+           rdfs:label "Thickness"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Time
+:Time rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
+      rdfs:comment "Time at which some property is observed." ;
+      rdfs:label "Time" .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TopWorkSheet
+:TopWorkSheet rdf:type owl:Class ;
+              rdfs:subClassOf :WorkPiece ;
+              rdfs:comment "Top worksheet"@en ;
+              rdfs:label "Top WorkSheet"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Voltage
+:Voltage rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+         rdfs:comment "Voltage."@en ;
+         rdfs:label "Voltage"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSensor
+:VoltageSensor rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+               rdfs:comment "This sensor is used to monitor, calculate and determine the voltage supply. This sensor can determine the AC or DC voltage level."@en ;
+               rdfs:label "Voltage Sensor"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSetPoint
+:VoltageSetPoint rdf:type owl:Class ;
+                 rdfs:subClassOf :ReferenceSetPoint ;
+                 rdfs:comment "The reference value set for voltage"@en ;
+                 rdfs:label "Voltage Set Point"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WearCount
+:WearCount rdf:type owl:Class ;
+           rdfs:subClassOf :Count ;
+           rdfs:comment "Wear count."@en ;
+           rdfs:label "Wear Count"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Weld
+:Weld rdf:type owl:Class ;
+      rdfs:subClassOf :OperationSteps ;
+      rdfs:comment "The activity inwhcih the current is flowed through the piece to generate some resistance to produce spot"@en ;
+      rdfs:label "Weld"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce
+:WeldForce rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+           rdfs:comment "weld force."@en ;
+           rdfs:label "Weld Force"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram
+:WeldProgram rdf:type owl:Class ;
+             rdfs:subClassOf :Program ;
+             rdfs:comment "Weld program."@en ;
+             rdfs:label "Weld Program"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpot
+:WeldSpot rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/rgom#Product> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :isOperationProductOf ;
+                            owl:someValuesFrom :ResistanceSpotWeldingOperation
+                          ] ;
+          rdfs:comment "Weld spot is a weld nugget, a pool of molten metal that quickly cools and solidifies into a round joint."@en ;
+          rdfs:label "Weld Nugget"@en ,
+                     "Weld Spot"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpotDiameter
+:WeldSpotDiameter rdf:type owl:Class ;
+                  rdfs:subClassOf :Diameter ,
+                                  :ProductQualityIndicator ;
+                  rdfs:comment "Diameter of a weld nugget."@en ;
+                  rdfs:label "Weld Spot Diameter"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmBottom
+:WeldingArmBottom rdf:type owl:Class ;
+                  rdfs:subClassOf <https://w3id.org/rgom#Part> ;
+                  rdfs:comment "Welding arm bottom"@en ;
+                  rdfs:label "Welding Arm Bottom"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmTop
+:WeldingArmTop rdf:type owl:Class ;
+               rdfs:subClassOf <https://w3id.org/rgom#Part> ;
+               rdfs:comment "Welding arm top"@en ;
+               rdfs:label "Welding Arm Top"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingControlSystem
+:WeldingControlSystem rdf:type owl:Class ;
+                      rdfs:subClassOf :ControlSystem ;
+                      rdfs:comment "A control system used for instruction."@en ;
+                      rdfs:label "Welding Control System"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom
+:WeldingGunBottom rdf:type owl:Class ;
+                  rdfs:subClassOf <https://w3id.org/rgom#Part> ;
+                  rdfs:comment "Welding gun bottom"@en ;
+                  rdfs:label "Welding Gun Bottom"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop
+:WeldingGunTop rdf:type owl:Class ;
+               rdfs:subClassOf <https://w3id.org/rgom#Part> ;
+               rdfs:label "Welding Gun Top"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine
+:WeldingMachine rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/rgom#Machine> ;
+                rdfs:comment "Machine that is used to perform a welding operation."@en ;
+                rdfs:label "Welding Machine"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingRobot
+:WeldingRobot rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/rgom#Part> ;
+              rdfs:comment "Welding Robot"@en ;
+              rdfs:label "Welding Robot"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPiece
+:WorkPiece rdf:type owl:Class ;
+           rdfs:subClassOf :PhysicalEntity ;
+           rdfs:comment "Work piece"@en ;
+           rdfs:label "Work Piece"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPieceCombination
+:WorkPieceCombination rdf:type owl:Class ;
+                      rdfs:subClassOf :PhysicalEntity ;
+                      rdfs:comment "the worksheets are combine together to produce a product that is known as Raw product"@en ;
+                      rdfs:label "WorkPiece Combination"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetBottomThickness
+:WorkSheetBottomThickness rdf:type owl:Class ;
+                          rdfs:subClassOf :Thickness ;
+                          rdfs:comment "Sheet Thickness"@en ;
+                          rdfs:label "Work Sheet Bottom Thickness"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopThickness
+:WorkSheetTopThickness rdf:type owl:Class ;
+                       rdfs:subClassOf :Thickness ;
+                       rdfs:comment "Sheet thicknes"@en ;
+                       rdfs:label "Work Sheet Top Thickness"@en .
+
+
+###  http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopWorkSheetBottomInteraction
+:WorkSheetTopWorkSheetBottomInteraction rdf:type owl:Class ;
+                                        rdfs:subClassOf :PiecePieceInteraction ;
+                                        rdfs:comment "Interaction Worksheet Top  and Worksheet Bottom"@en ;
+                                        rdfs:label "WorkSheet Top WorkSheet Bottom Interaction"@en .
+
+
+###  http://www.w3.org/2006/time#OperationTime
+<http://www.w3.org/2006/time#OperationTime> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
+                                            rdfs:comment "A temporal entity with duration."@en ;
+                                            rdfs:label "Time:OperationTime"@en .
+
+
+###  http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> rdf:type owl:Class ;
+                                             rdfs:comment "A temporal interval."@en ;
+                                             rdfs:label "Time:Termporal Entity"@en .
+
+
+###  http://www.w3.org/ns/sosa/ObservableProperty
+<http://www.w3.org/ns/sosa/ObservableProperty> rdf:type owl:Class ;
+                                               rdfs:comment "A property that can be observed  with some sensor"@en ;
+                                               rdfs:label "Observable Property"@en .
+
+
+###  http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> rdf:type owl:Class ;
+                                   rdfs:subClassOf :PhysicalEntity ;
+                                   rdfs:comment "Sensor - Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a Stimulus"@en ;
+                                   rdfs:label "Sensor"@en .
+
+
+###  https://w3id.org/rgom#AssemblingProcess
+<https://w3id.org/rgom#AssemblingProcess> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://w3id.org/rgom#ManufacturingProcess> ;
+                                          rdfs:comment "Assembling process"@en ;
+                                          rdfs:label "Assembling Process"@en .
+
+
+###  https://w3id.org/rgom#ContextualData
+<https://w3id.org/rgom#ContextualData> rdf:type owl:Class ;
+                                       rdfs:comment "A contextual data provides added value information."@en ;
+                                       rdfs:label "Contextual Data"@en .
+
+
+###  https://w3id.org/rgom#Line
+<https://w3id.org/rgom#Line> rdf:type owl:Class ;
+                             rdfs:subClassOf :PhysicalEntity ;
+                             rdfs:label "Production Line" .
+
+
+###  https://w3id.org/rgom#Machine
+<https://w3id.org/rgom#Machine> rdf:type owl:Class ;
+                                rdfs:subClassOf :PhysicalEntity ;
+                                rdfs:isDefinedBy "A machine (or mechanical device) is a mechanical structure (made of parts or tools) that uses power to apply forces and control movement to perform an intended action."@en ;
+                                rdfs:label "Asset"@en ,
+                                           "Device"@en ,
+                                           "Machine"@en .
+
+
+###  https://w3id.org/rgom#Maintenance
+<https://w3id.org/rgom#Maintenance> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://w3id.org/rgom#Process> ;
+                                    rdfs:comment "A process performed to maintain machine or its part"@en ;
+                                    rdfs:label "Maintenance Process"@en .
+
+
+###  https://w3id.org/rgom#ManufacturingProcess
+<https://w3id.org/rgom#ManufacturingProcess> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://w3id.org/rgom#Process> ;
+                                             rdfs:comment "Manufacturing process"@en ;
+                                             rdfs:label "Manufacturing Process"@en .
+
+
+###  https://w3id.org/rgom#Part
+<https://w3id.org/rgom#Part> rdf:type owl:Class ;
+                             rdfs:subClassOf :PhysicalEntity ;
+                             rdfs:comment "Machine part"@en ;
+                             rdfs:label "Machine Part"@en .
+
+
+###  https://w3id.org/rgom#Process
+<https://w3id.org/rgom#Process> rdf:type owl:Class ;
+                                rdfs:isDefinedBy "A process is a series or set of activities that interact to produce a result."@en ;
+                                rdfs:label "Process"@en .
+
+
+###  https://w3id.org/rgom#Product
+<https://w3id.org/rgom#Product> rdf:type owl:Class ;
+                                rdfs:subClassOf :PhysicalEntity ;
+                                rdfs:comment "Product of an operation"@en ;
+                                rdfs:isDefinedBy "A product that is produced as a result of an operation"@en ;
+                                rdfs:label "Operation Product"@en .
+
+
+###  https://w3id.org/rgom#WorkStation
+<https://w3id.org/rgom#WorkStation> rdf:type owl:Class ;
+                                    rdfs:subClassOf :PhysicalEntity ;
+                                    rdfs:label "WorkStation"@en ,
+                                               "Workstation"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ElectrodeCapBottom
+                :WeldingGunBottom
+                :WeldingRobot
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

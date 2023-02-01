@@ -1,0 +1,1030 @@
+{
+  "@context" : {
+    "hasMaterialResistanceOfWorkSheetBottom" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfWorkSheetBottom",
+      "@type" : "@id"
+    },
+    "hasNoseType" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseType",
+      "@type" : "@id"
+    },
+    "ElectricCurrent" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent"
+    },
+    "ProductQualityIndicator" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ProductQualityIndicator"
+    },
+    "hasMonitorStateText" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMonitorStateText",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasBottomElectrodeWeldForce" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasBottomElectrodeWeldForce"
+    },
+    "MonitoringModule" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"
+    },
+    "WeldingArmTop" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmTop"
+    },
+    "C68547" : {
+      "@id" : "NCIT:C68547"
+    },
+    "hasElectrodeBottomWeldFaceDiameter" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomWeldFaceDiameter",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Electrode" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Electrode"
+    },
+    "hasNoseLength" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseLength"
+    },
+    "hasTopElectrodeWeldForce" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasTopElectrodeWeldForce"
+    },
+    "hasWeldCurrentTime" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldCurrentTime",
+      "@type" : "@id"
+    },
+    "hasBottomWorkSheetId" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasBottomWorkSheetId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasSpatter" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpatter",
+      "@type" : "@id"
+    },
+    "ContactResistanceBetweenElectrodeBottomAndWorkSheetBottom" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeBottomAndWorkSheetBottom"
+    },
+    "hasVoltageUnit" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasVoltageUnit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Line" : {
+      "@id" : "https://w3id.org/rgom#Line"
+    },
+    "MeasuringModule" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "ElectricCurrentSetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrentSetPoint"
+    },
+    "hasElectrodeBottomNoseLength" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomNoseLength",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasWeldProgramReferenceEnergySetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceEnergySetPoint",
+      "@type" : "@id"
+    },
+    "ControlModule" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"
+    },
+    "hasPhasePower" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPhasePower",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "WeldingRobot" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingRobot"
+    },
+    "hasHoldTime" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasHoldTime"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/elements/1.1/license"
+    },
+    "isWeldingGunTopOf" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingGunTopOf",
+      "@type" : "@id"
+    },
+    "WeldingArmBottom" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmBottom"
+    },
+    "hasWorkSheetTop" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetTop",
+      "@type" : "@id"
+    },
+    "EnergySetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#EnergySetPoint"
+    },
+    "hasWeldingGunBottom" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingGunBottom",
+      "@type" : "@id"
+    },
+    "ContactResistanceBetweenElectrodeTopAndWorkSheetTop" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeTopAndWorkSheetTop"
+    },
+    "hasSpotRepetition" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpotRepetition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Thickness" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Thickness"
+    },
+    "hasWeldSpotDiameter" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldSpotDiameter"
+    },
+    "hasSqueezeStep" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSqueezeStep",
+      "@type" : "@id"
+    },
+    "hasMonitorState" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMonitorState",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasWeldFaceDiameter" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldFaceDiameter"
+    },
+    "Diameter" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Diameter"
+    },
+    "VoltageSensor" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSensor"
+    },
+    "ElectrodeBottomWorksheetBottomInteraction" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomWorksheetBottomInteraction"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "MaterialResistanceOfWorkSheetBottom" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfWorkSheetBottom"
+    },
+    "hasDressCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasDressCount",
+      "@type" : "@id"
+    },
+    "Program" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Program"
+    },
+    "hasPowerSetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerSetPoint",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "ObservesPower" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ObservesPower",
+      "@type" : "@id"
+    },
+    "Product" : {
+      "@id" : "https://w3id.org/rgom#Product"
+    },
+    "hasWorkSheetTopThickness" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetTopThickness",
+      "@type" : "@id"
+    },
+    "hasRSWOperationID" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasRSWOperationID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasMaterialResistanceOfElectrodeBottom" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfElectrodeBottom",
+      "@type" : "@id"
+    },
+    "WeldSpot" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpot"
+    },
+    "DCLinkCurrent" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#DCLinkCurrent"
+    },
+    "Voltage" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Voltage"
+    },
+    "hasOperationControleModule" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationControleModule",
+      "@type" : "@id"
+    },
+    "DressCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#DressCount"
+    },
+    "WorkPieceCombination" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPieceCombination"
+    },
+    "hasWeldProgramReferenceCurrentSetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceCurrentSetPoint",
+      "@type" : "@id"
+    },
+    "ElectrodeBottomWearCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomWearCount"
+    },
+    "NCIT_C48500" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C48500"
+    },
+    "ACLinkCurrent" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ACLinkCurrent"
+    },
+    "NCIT_C25709" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C25709"
+    },
+    "hasSpotRepetitionStatus" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpotRepetitionStatus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "weldCurrentAtTime" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#weldCurrentAtTime",
+      "@type" : "@id"
+    },
+    "MachinePartPieceInteraction" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MachinePartPieceInteraction"
+    },
+    "Ampere" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Ampere"
+    },
+    "ThermalContactConductivity" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ThermalContactConductivity"
+    },
+    "hasElectrodeCapBottom" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottom",
+      "@type" : "@id"
+    },
+    "hasOperationMonitoringModule" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationMonitoringModule",
+      "@type" : "@id"
+    },
+    "ThermalConductivity" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ThermalConductivity"
+    },
+    "hasWorkSheetTopThicknessValue" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetTopThicknessValue"
+    },
+    "PowerSensor" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSensor"
+    },
+    "hasAdditionalProcessControlStatus" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasAdditionalProcessControlStatus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "hasResistanceBetweenElectrodeBottomAndWorkSheetBottom" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistanceBetweenElectrodeBottomAndWorkSheetBottom",
+      "@type" : "@id"
+    },
+    "hasWorkSheetBottomThickness" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetBottomThickness",
+      "@type" : "@id"
+    },
+    "creater" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creater"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasPowerStatusText" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerStatusText",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ReferenceSetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ReferenceSetPoint"
+    },
+    "ContextualData" : {
+      "@id" : "https://w3id.org/rgom#ContextualData"
+    },
+    "hasWeldStep" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldStep",
+      "@type" : "@id"
+    },
+    "isOperationProductOf" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isOperationProductOf",
+      "@type" : "@id"
+    },
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf",
+      "@type" : "@id"
+    },
+    "VoltageSetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSetPoint"
+    },
+    "hasElectrodeCapDressCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapDressCount"
+    },
+    "hasWorkSheetBottomThicknessValue" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetBottomThicknessValue"
+    },
+    "hasPart" : {
+      "@id" : "http://purl.org/dc/terms/hasPart",
+      "@type" : "@id"
+    },
+    "hasEnergySetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasEnergySetPoint",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasWeldForce" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldForce",
+      "@type" : "@id"
+    },
+    "hasEnergy" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasEnergy",
+      "@type" : "@id"
+    },
+    "NCIT_C67275" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C67275"
+    },
+    "Count" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Count"
+    },
+    "hasWorkSheetBottom" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetBottom",
+      "@type" : "@id"
+    },
+    "hasOperationQualityIndicator" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationQualityIndicator",
+      "@type" : "@id"
+    },
+    "hasPowerUnit" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerUnit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasMaterialResistanceOfElectrodeTop" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfElectrodeTop",
+      "@type" : "@id"
+    },
+    "Operation" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Operation"
+    },
+    "WeldingControlSystem" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingControlSystem"
+    },
+    "BottomWorkSheet" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#BottomWorkSheet"
+    },
+    "hasCurrent" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasCurrent",
+      "@type" : "@id"
+    },
+    "ElectrodeCapBottomApplyWeldForce" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottomApplyWeldForce",
+      "@type" : "@id"
+    },
+    "hasThermalContactConductivity" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasThermalContactConductivity",
+      "@type" : "@id"
+    },
+    "hasVoltageSetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasVoltageSetPoint",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "MaterialResistanceOfElectrodeTop" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfElectrodeTop"
+    },
+    "Resistance" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance"
+    },
+    "hasMeasurementStatus" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMeasurementStatus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasQValue" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasQValue",
+      "@type" : "@id"
+    },
+    "QValue" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QValue"
+    },
+    "applyWeldForce" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#applyWeldForce",
+      "@type" : "@id"
+    },
+    "hasProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/hasProperty"
+    },
+    "ElectrodeCapTop" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"
+    },
+    "hasSpatterOccurTime" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpatterOccurTime"
+    },
+    "Dressing" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Dressing"
+    },
+    "Phase1" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Phase1"
+    },
+    "hasPropertyEnergy" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPropertyEnergy",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "OperationQualityIndicator" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationQualityIndicator"
+    },
+    "hasElectrodeTopWeldFaceDiameter" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopWeldFaceDiameter",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Spatter" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Spatter"
+    },
+    "TopWorkSheet" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TopWorkSheet"
+    },
+    "ManufacturingProcess" : {
+      "@id" : "https://w3id.org/rgom#ManufacturingProcess"
+    },
+    "hasElectrodeCapBottomDressCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottomDressCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasElectrodeBottomWaterHoleDiameter" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomWaterHoleDiameter",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasOperation" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperation",
+      "@type" : "@id"
+    },
+    "hasProcessControlStatusText" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasProcessControlStatusText",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "NCIT_C28251" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C28251"
+    },
+    "hasElectrodeTopWaterHoleDiameter" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopWaterHoleDiameter",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "InteractWith" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#InteractWith",
+      "@type" : "@id"
+    },
+    "hasEnergyUnit" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasEnergyUnit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasPropertyCurrent" : {
+      "@id" : "http://www.w3.org/ns/sosa#hasPropertyCurrent",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasSqueezeTime" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSqueezeTime"
+    },
+    "hasElectrodeBottomDressCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomDressCount",
+      "@type" : "@id"
+    },
+    "Energy" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Energy"
+    },
+    "hasTopWorkSheetId" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasTopWorkSheetId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "ElectrodeTopWorksheetTopInteraction" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopWorksheetTopInteraction"
+    },
+    "hasWeldProgramReferencePowerSetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferencePowerSetPoint",
+      "@type" : "@id"
+    },
+    "MaterialResistanceOfElectrodeBottom" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfElectrodeBottom"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "hasElectrodeBottomNoseType" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomNoseType",
+      "@type" : "@id"
+    },
+    "FunctionalModule" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FunctionalModule"
+    },
+    "hasWeldingArmTop" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingArmTop",
+      "@type" : "@id"
+    },
+    "hasTime" : {
+      "@id" : "https://www.w3.org/TR/owl-time/#time:hasTime",
+      "@type" : "@id"
+    },
+    "hasElectrodeCapBottomNumber" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottomNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasOperationCurrent" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationCurrent",
+      "@type" : "@id"
+    },
+    "HeatTransferCoefficient" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#HeatTransferCoefficient"
+    },
+    "hasWorkSheetThickness" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetThickness",
+      "@type" : "@id"
+    },
+    "hasSpotRepetitionStatusText" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpotRepetitionStatusText",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "PiecePieceInteraction" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PiecePieceInteraction"
+    },
+    "CurrentSensor" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#CurrentSensor"
+    },
+    "hasElectricCurrentUnit" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectricCurrentUnit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ElectrodeBottomDressCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomDressCount"
+    },
+    "hasWeldingMachineName" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingMachineName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "rights" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#rights"
+    },
+    "OperationSteps" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationSteps"
+    },
+    "ObservesCurrent" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ObservesCurrent",
+      "@type" : "@id"
+    },
+    "isPerformedBy" : {
+      "@id" : "https://w3id.org/rgom#isPerformedBy",
+      "@type" : "@id"
+    },
+    "TemporalEntity" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+    },
+    "hasElectrodeBottomWearCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomWearCount",
+      "@type" : "@id"
+    },
+    "hasResistance" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance",
+      "@type" : "@id"
+    },
+    "hasPropertyVoltage" : {
+      "@id" : "http://www.w3.org/ns/sosa#hasPropertyVoltage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "ControlSystem" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlSystem"
+    },
+    "isWeldingRobotOf" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingRobotOf",
+      "@type" : "@id"
+    },
+    "WorkSheetTopWorkSheetBottomInteraction" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopWorkSheetBottomInteraction"
+    },
+    "WearCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WearCount"
+    },
+    "WorkSheetBottomThickness" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetBottomThickness"
+    },
+    "isWeldingArmBottomOf" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingArmBottomOf",
+      "@type" : "@id"
+    },
+    "hasWeldProgram" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgram",
+      "@type" : "@id"
+    },
+    "ResistanceSetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSetPoint"
+    },
+    "FrictionCoefficient" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FrictionCoefficient"
+    },
+    "NCIT_C42554" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C42554"
+    },
+    "CurrentControlModeStatusText" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#CurrentControlModeStatusText",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasPieceInteraction" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPieceInteraction",
+      "@type" : "@id"
+    },
+    "hasDiameter" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasDiameter",
+      "@type" : "@id"
+    },
+    "WeldSpotDiameter" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpotDiameter"
+    },
+    "hasResistanceBetweenElectrodeTopAndWorkSheetTop" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistanceBetweenElectrodeTopAndWorkSheetTop",
+      "@type" : "@id"
+    },
+    "hasSensor" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSensor",
+      "@type" : "@id"
+    },
+    "WeldProgram" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram"
+    },
+    "hasWeldSpotQValue" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldSpotQValue",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "hasWearCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWearCount",
+      "@type" : "@id"
+    },
+    "isElectrodeCapBottomOf" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isElectrodeCapBottomOf",
+      "@type" : "@id"
+    },
+    "Part" : {
+      "@id" : "https://w3id.org/rgom#Part"
+    },
+    "hasElectrodeCapBottomWearCountNumber" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottomWearCountNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "observes" : {
+      "@id" : "http://www.w3.org/ns/sosa#observes",
+      "@type" : "@id"
+    },
+    "ElectrodeTopDressCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopDressCount"
+    },
+    "hasInteraction" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasInteraction",
+      "@type" : "@id"
+    },
+    "ResistanceSpotWeldingOperation" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+    },
+    "belongsToProductionLine" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#belongsToProductionLine",
+      "@type" : "@id"
+    },
+    "ElectrodeCapBottom" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"
+    },
+    "hasWeldingGunTop" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingGunTop",
+      "@type" : "@id"
+    },
+    "hasWeldCurrent" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldCurrent",
+      "@type" : "@id"
+    },
+    "isWeldingGunBottomOf" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingGunBottomOf",
+      "@type" : "@id"
+    },
+    "hasOperationPower" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationPower",
+      "@type" : "@id"
+    },
+    "copyright" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#copyright"
+    },
+    "hasWeldingProgramID" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingProgramID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasElectrodeCapWearCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapWearCount"
+    },
+    "WorkPiece" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPiece"
+    },
+    "ElectrodeBottomInteractWith" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomInteractWith",
+      "@type" : "@id"
+    },
+    "hasProductQualityIndicator" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasProductQualityIndicator",
+      "@type" : "@id"
+    },
+    "QualityIndicator" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QualityIndicator"
+    },
+    "hasOperationMeasurementModule" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationMeasurementModule",
+      "@type" : "@id"
+    },
+    "hasWeldForceTime" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldForceTime",
+      "@type" : "@id"
+    },
+    "hasPhase" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPhase",
+      "@type" : "@id"
+    },
+    "TensileShearStrength" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TensileShearStrength"
+    },
+    "hasNoseTypeName" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseTypeName"
+    },
+    "hasThickness" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasThickness"
+    },
+    "maintainer" : {
+      "@id" : "http://purl.org/dc/elements/1.1/maintainer"
+    },
+    "hasReferenceSetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasReferenceSetPoint"
+    },
+    "hasElectrodeTopNoseType" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopNoseType",
+      "@type" : "@id"
+    },
+    "hasResistanceUnit" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistanceUnit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasUnit" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasUnit"
+    },
+    "hasWorkSheet" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheet",
+      "@type" : "@id"
+    },
+    "hasWeldingProgramNumber" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingProgramNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "PowerSetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSetPoint"
+    },
+    "hasWeldingArmBottom" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingArmBottom",
+      "@type" : "@id"
+    },
+    "hasElectrodeTopDressCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopDressCount",
+      "@type" : "@id"
+    },
+    "hasElectrodeCapTopNumber" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTopNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasWeldTime" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldTime"
+    },
+    "hasHoldStep" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasHoldStep",
+      "@type" : "@id"
+    },
+    "Process" : {
+      "@id" : "https://w3id.org/rgom#Process"
+    },
+    "hasWeldProgramReferenceSetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceSetPoint",
+      "@type" : "@id"
+    },
+    "WeldingGunBottom" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom"
+    },
+    "hasOperationVoltage" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationVoltage",
+      "@type" : "@id"
+    },
+    "hasElectrodeBottomNoseTypeName" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomNoseTypeName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasControlModule" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasControlModule",
+      "@type" : "@id"
+    },
+    "ResistanceSpotWeldingProcess" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingProcess"
+    },
+    "hasMeasurementModule" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMeasurementModule",
+      "@type" : "@id"
+    },
+    "AssemblingProcess" : {
+      "@id" : "https://w3id.org/rgom#AssemblingProcess"
+    },
+    "hasRawProduct" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasRawProduct",
+      "@type" : "@id"
+    },
+    "hasMonitoringModule" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMonitoringModule",
+      "@type" : "@id"
+    },
+    "hasElectrodeCapTopDressCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTopDressCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "SWO_0000001" : {
+      "@id" : "http://www.ebi.ac.uk/swo/SWO_0000001"
+    },
+    "hasWeldProgramReferenceVoltageSetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceVoltageSetPoint",
+      "@type" : "@id"
+    },
+    "ContactHeatTransferCoefficient" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactHeatTransferCoefficient"
+    },
+    "hasAdditionalProcessControlStatusText" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasAdditionalProcessControlStatusText",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Interaction" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Interaction"
+    },
+    "ElectrodeTopWearCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopWearCount"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasPropertyPower" : {
+      "@id" : "http://www.w3.org/ns/sosa#hasPropertyPower",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "OperationTime" : {
+      "@id" : "http://www.w3.org/2006/time#OperationTime"
+    },
+    "WeldingMachine" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"
+    },
+    "ContactArea" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactArea"
+    },
+    "ObservableProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+    },
+    "performsProcess" : {
+      "@id" : "https://w3id.org/rgom#performsProcess",
+      "@type" : "@id"
+    },
+    "ObservesVoltage" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ObservesVoltage",
+      "@type" : "@id"
+    },
+    "ElectrodeCapTopApplyWeldForce" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTopApplyWeldForce",
+      "@type" : "@id"
+    },
+    "Hold" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Hold"
+    },
+    "hasElectrode" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrode",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "hasElectrodeTopWearCount" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopWearCount",
+      "@type" : "@id"
+    },
+    "WorkSheetTopThickness" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopThickness"
+    },
+    "WorkStation" : {
+      "@id" : "https://w3id.org/rgom#WorkStation"
+    },
+    "Machine" : {
+      "@id" : "https://w3id.org/rgom#Machine"
+    },
+    "NCIT_C48161" : {
+      "@id" : "http://purl.obolibrary.org/obo/NCIT_C48161"
+    },
+    "WeldForce" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"
+    },
+    "weldForceAtTime" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#weldForceAtTime",
+      "@type" : "@id"
+    },
+    "hasPowerStatus" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerStatus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasWaterHoleDiameter" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWaterHoleDiameter"
+    },
+    "hasElectrodeCapTopWearCountNumber" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTopWearCountNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasElectrodeCapTop" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTop",
+      "@type" : "@id"
+    },
+    "hasOperationWeldProgram" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationWeldProgram",
+      "@type" : "@id"
+    },
+    "hasOperationQValue" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationQValue",
+      "@type" : "@id"
+    },
+    "isElectrodeCapTopOf" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isElectrodeCapTopOf",
+      "@type" : "@id"
+    },
+    "isWeldingArmTopOf" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingArmTopOf",
+      "@type" : "@id"
+    },
+    "PhysicalEntity" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"
+    },
+    "NoseType" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType"
+    },
+    "hasWorkStation" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkStation",
+      "@type" : "@id"
+    },
+    "hasWeldingRobot" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingRobot",
+      "@type" : "@id"
+    },
+    "Area" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Area"
+    },
+    "WeldingGunTop" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop"
+    },
+    "hasMaterialResistanceOfWorkSheetTop" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfWorkSheetTop",
+      "@type" : "@id"
+    },
+    "Power" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Power"
+    },
+    "hasQValueActual" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasQValueActual",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Maintenance" : {
+      "@id" : "https://w3id.org/rgom#Maintenance"
+    },
+    "Weld" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Weld"
+    },
+    "hasCurrentSetPoint" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasCurrentSetPoint",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Time" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Time"
+    },
+    "hasPropertyResistance" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPropertyResistance",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasElectrodeTopNoseLength" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopNoseLength",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasCurrentControlModeStatus" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasCurrentControlModeStatus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Assembly" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Assembly"
+    },
+    "ElectrodeTopInteractWith" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopInteractWith",
+      "@type" : "@id"
+    },
+    "hasDateTimeStamp" : {
+      "@id" : "http://www.w3.org/2006/time#hasDateTimeStamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "MaterialResistanceOfWorkSheetTop" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfWorkSheetTop"
+    },
+    "hasProcessControlStatus" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasProcessControlStatus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasElectrodeTopNoseTypeName" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopNoseTypeName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasSteps" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSteps",
+      "@type" : "@id"
+    },
+    "Squeeze" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Squeeze"
+    },
+    "Sensor" : {
+      "@id" : "http://www.w3.org/ns/sosa/Sensor"
+    },
+    "hasMeasurementStatusText" : {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMeasurementStatusText",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}
