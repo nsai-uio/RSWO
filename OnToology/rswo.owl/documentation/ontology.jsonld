@@ -1,0 +1,3933 @@
+[ {
+  "@id" : "NCIT:C68547",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The unit of pressure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Joules"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C25709"
+  } ]
+}, {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isOperationProductOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"
+    }, {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom"
+    }, {
+      "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingRobot"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C25709",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Unit of measure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Unit Of Measure"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C28251",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Millimeter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MilliMeter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C25709"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C42554",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The unit of resistance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ohm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C25709"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C48161",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Force."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Force"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C25709"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C48500",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Inch unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C25709"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C67275",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The unit of power."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Watts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C25709"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/contributor"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/maintainer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/contributor"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "A related resource that is included either physically or logically in the described resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dcterms:hasPart"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property is intended to be used with non-literal values. This property is an inverse property of Has Part."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "A related resource in which the described resource is physically or logically included."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dcterms:isPartOf"
+  } ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ebi.ac.uk/swo/SWO_0000001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Software is any set of machine-readable instructions (most often in the form of a computer program) that conform to a given syntax (sometimes referred to as a language) that is interpretable by a given processor and that directs a computer's processor to perform specific operations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Software"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@language" : "en",
+    "@value" : "Baifan Zhou, John G. Breslin, Ali intezar,  Evgeny Kharlamov"
+  } ],
+  "http://purl.org/dc/elements/1.1/creater" : [ {
+    "@language" : "en",
+    "@value" : "Muhammad Yahya (University of Galway, Ireland)"
+  } ],
+  "http://purl.org/dc/elements/1.1/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#copyright" : [ {
+    "@language" : "en",
+    "@value" : "Copyright (c) 2022 Open Applications Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The most recent version of this file will always be in the GitHub repository https://github.com/MuhammadYahta/rswo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Resistance Spot Welding Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ACLinkCurrent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AC-Link current."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AC Link Current"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Ampere",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The SI unit of current."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Amphere"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C25709"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Area",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The quantity that expresses the extent of a two-dimensional figure or shape, or planar lamina, in the plane."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Assembly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Assembly"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Assembly"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPieceCombination"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#BottomWorkSheet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Bottom worksheet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bottom WorkSheet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPiece"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An area of contact."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contact Area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Area"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactHeatTransferCoefficient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Contact heat transfer coefficient."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contact Heat Transfer Coefficient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#HeatTransferCoefficient"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeBottomAndWorkSheetBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The resistance caused by the passage of electric current in the workpiece."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contact Resistance Between ElectrodeBottom And WorkSheetBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeTopAndWorkSheetTop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The resistance caused by the passage of electric current in the workpiece."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contact Resistance Between ElectrodeTop And WorkSheet Top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Control module."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Control Module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FunctionalModule"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Control system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Control System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ebi.ac.uk/swo/SWO_0000001"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Count",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "a number of occurance of a thing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/rgom#ContextualData"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#CurrentControlModeStatusText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#CurrentSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A current sensor is a device that detects electric current in a wire and generates a signal proportional to that current. The generated signal could be analog voltage or current or a digital output. The generated signal can be then used to display the measured current in an ammeter, or can be stored for further analysis in a data acquisition system, or can be used for the purpose of control."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Current Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#DCLinkCurrent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "DC-Link current."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DC Link Current"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Diameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Diameter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Diameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#DressCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dress count."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dress Count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Count"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Dressing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "Process of dressing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dressing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/rgom#Maintenance"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Electric current supplied in welding."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electric Current"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrentSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electric Current Set Point"
+  }, {
+    "@language" : "en",
+    "@value" : "The reference value set for electric current"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ReferenceSetPoint"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Electrode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Electrode."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electrode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/rgom#Part"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingRobot"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomDressCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dressings for electrode bottom."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electrode Bottom Dress Count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#DressCount"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomInteractWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between Electrode cap bottom and bottom worksheet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electrode Bottom Interact With"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#BottomWorkSheet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#InteractWith"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomWearCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "wear occured  for electrode bottom."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electrode Bottom Wear Count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WearCount"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomWorksheetBottomInteraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MachinePartPieceInteraction"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Electrode cap bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electrode Cap Bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Electrode"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottomApplyWeldForce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Force applied by the bottom electrode."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "electrode Cap Bottom Apply Weld Force"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#applyWeldForce"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Electrode cap top."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electrode Cap Top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Electrode"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTopApplyWeldForce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Force applied by the top electrode."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "electrode Cap Top Apply Weld Force"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#applyWeldForce"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopDressCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dressings for electrode top."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electrode Top Dress Count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#DressCount"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopInteractWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between electrode cap top and top worksheet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electrode Top Interact With"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TopWorkSheet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#InteractWith"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopWearCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "wear occured for electrode top."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electrode Top Wear Count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WearCount"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopWorksheetTopInteraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MachinePartPieceInteraction"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Energy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Energy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#EnergySetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The reference value set for energy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Energy Set Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ReferenceSetPoint"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FrictionCoefficient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The dimensionless scalar value which describes the ratio of the force of friction between two bodies and the force pressing them together."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Friction Coefficient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FunctionalModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Functional module."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Functional Module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ebi.ac.uk/swo/SWO_0000001"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#HeatTransferCoefficient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The proportionality constant between the heat flux and the thermodynamic driving force for the flow of heat (i.e., the temperature difference)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Heat Transfer Coefficient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Hold",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The activity inwhich pieces are hold to interact with each other."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hold"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationSteps"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#InteractWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "InteractWith"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Interaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Interaction between something."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Interaction"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MachinePartPieceInteraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The interaction between Machine Part and Piece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Machine Part Piece Interaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Interaction"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfElectrodeBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Material resistance of electrode bottom."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Material Resistance Of Electrode Bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfElectrodeTop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Material resistance of electrode top."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Material Resistance Of Electrode Top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfWorkSheetBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Material resistance of Worksheet bottom."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Material Resistance Of WorkSheetBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfWorkSheetTop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Material resistance of Worksheet top."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Material Resistance Of WorkSheet Top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measuring module."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Measuring Module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FunctionalModule"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Monitoring module."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Monitoring Module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FunctionalModule"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nose Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ObservesCurrent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation between a Current Sensor and an Ac Link Current."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#CurrentSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "observes Current"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ACLinkCurrent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#observes"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ObservesPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation between a Power Sensor and power."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "observes Power"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Power"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#observes"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ObservesVoltage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation between a Voltage Sensor and Voltage."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "observes Voltage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Voltage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#observes"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Operation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Operation"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationQualityIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Quality indicator related to an operation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Operation Quality Indicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ProductQualityIndicator"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationSteps",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sets of actvities involve in an operations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Operation Steps"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Phase1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Phase 1."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Phase 1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A tangible thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Physical Entity"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PiecePieceInteraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Interaction between work sheets (Work pieces)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Piece Piece Interaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Interaction"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Power."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Power"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "50Hz / 60Hz"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Power Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The reference value set for power"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Power Set Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ReferenceSetPoint"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ProductQualityIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Quality indicator related to a product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Product Quality Indicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QualityIndicator"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Program",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Program."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Program"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ebi.ac.uk/swo/SWO_0000001"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Bosch value to measure the quality of weld"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Q-Value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QualityIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Quality indicator of an operation and product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Quality Indicator"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ReferenceSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reference set point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Reference Set Point"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Resistance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Resistance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The reference value set for Resistance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Resistance Set Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ReferenceSetPoint"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Resistance Spot Welding (RSW) Operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RSW Operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Operation"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Resistance spot welding process."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Resistance Spot Welding Process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/rgom#AssemblingProcess"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Spatter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "splashes produced during the welding"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Spatter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Squeeze",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The activites inwhich force is applied to the pieces."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Squeeze"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationSteps"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TensileShearStrength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Tensile shear strength."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tensile Shear Strength"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QualityIndicator"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ThermalConductivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The ability to conduct heat."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Thermal Conductivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ThermalContactConductivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Thermal Contact Conductivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ThermalConductivity"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Thickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "thickness."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Thickness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Time at which some property is observed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TopWorkSheet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Top worksheet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Top WorkSheet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPiece"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Voltage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Voltage."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Voltage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This sensor is used to monitor, calculate and determine the voltage supply. This sensor can determine the AC or DC voltage level."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Voltage Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The reference value set for voltage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Voltage Set Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ReferenceSetPoint"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WearCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Wear count."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wear Count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Count"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Weld",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The activity inwhcih the current is flowed through the piece to generate some resistance to produce spot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weld"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationSteps"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "weld force."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weld Force"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Weld program."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weld Program"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Program"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Weld spot is a weld nugget, a pool of molten metal that quickly cools and solidifies into a round joint."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weld Nugget"
+  }, {
+    "@language" : "en",
+    "@value" : "Weld Spot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/rgom#Product"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpotDiameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Diameter of a weld nugget."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weld Spot Diameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Diameter"
+  }, {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ProductQualityIndicator"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Welding arm bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Welding Arm Bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/rgom#Part"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmTop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Welding arm top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Welding Arm Top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/rgom#Part"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingControlSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A control system used for instruction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Welding Control System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlSystem"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Welding gun bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Welding Gun Bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/rgom#Part"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Welding Gun Top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/rgom#Part"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Machine that is used to perform a welding operation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Welding Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/rgom#Machine"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingRobot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Welding Robot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Welding Robot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/rgom#Part"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPiece",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Work piece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Work Piece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPieceCombination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the worksheets are combine together to produce a product that is known as Raw product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WorkPiece Combination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetBottomThickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sheet Thickness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Work Sheet Bottom Thickness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Thickness"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopThickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sheet thicknes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Work Sheet Top Thickness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Thickness"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopWorkSheetBottomInteraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Interaction Worksheet Top  and Worksheet Bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WorkSheet Top WorkSheet Bottom Interaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PiecePieceInteraction"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#applyWeldForce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Force/pressure applied for welding"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "apply Weld Force"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#belongsToProductionLine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The relation between Machine and Production Line."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/rgom#Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "belongs To Production Line"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/rgom#Line"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#copyright",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#rights"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasAdditionalProcessControlStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasAdditionalProcessControlStatusText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasBottomElectrodeWeldForce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasBottomWorkSheetId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#BottomWorkSheet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasControlModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between welding control system and control module."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingControlSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Control Module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasCurrent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Current"
+  }, {
+    "@language" : "en",
+    "@value" : "relation between weld force and electric current."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasCurrentControlModeStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasCurrentSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrentSetPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasReferenceSetPoint"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasDiameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between weld spot and diameter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/rgom#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Diameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Diameter"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasDressCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between electrode and dress."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Dress Count"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectricCurrentUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ACLinkCurrent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasUnit"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and electrode."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Electrode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Electrode"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomDressCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between electrode cap bottom and electrode bottom dress."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Electrode Bottom Dress Count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomDressCount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasDressCount"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomNoseLength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseLength"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomNoseType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between electrode bottom and its nose type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Electrode Bottom Nose Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseType"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomNoseTypeName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseTypeName"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomWaterHoleDiameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWaterHoleDiameter"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomWearCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between electrode cap bottom and electrode bottom wear count."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Electrode Bottom Wear Count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomWearCount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWearCount"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomWeldFaceDiameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldFaceDiameter"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The welding gun bottom has part electrode cap bottom."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Electrode Cap Bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isElectrodeCapBottomOf"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottomDressCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomDressCount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapDressCount"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottomNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottomWearCountNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomWearCount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapWearCount"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapDressCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The welding gun top has part electrode cap top."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Electrode Cap Top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isElectrodeCapTopOf"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTopDressCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopDressCount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapDressCount"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTopNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTopWearCountNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopWearCount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapWearCount"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapWearCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopDressCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between  electrode cap top and electrode top dress."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Electrode Top Dress Count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopDressCount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasDressCount"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopNoseLength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseLength"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopNoseType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between electrode top and its nose type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Electrode Top Nose Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseType"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopNoseTypeName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseTypeName"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopWaterHoleDiameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWaterHoleDiameter"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopWearCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between electrode cap top and electrode top wear count."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Electrode Top Wear Count"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopWearCount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWearCount"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopWeldFaceDiameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldFaceDiameter"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasEnergy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and energy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Energy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Energy"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasEnergySetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#EnergySetPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasReferenceSetPoint"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasEnergyUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Energy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasUnit"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasHoldStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and hold step."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Hold Step"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Hold"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSteps"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasHoldTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Hold"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasInteraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and the piece piece interaction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Interaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PiecePieceInteraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfElectrodeBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Material Resistance Of Electrode Bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfElectrodeBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfElectrodeTop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and material resistance of electrode top."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Material Resistance Of Electrode Top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfElectrodeTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfWorkSheetBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and material resistance of worksheet bottom."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Material Resistance Of Worksheet Bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfWorkSheetBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfWorkSheetTop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Material Resistance Of WorkSheet Top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfWorkSheetTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMeasurementModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between welding control system and measuring module."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingControlSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Measurement Module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMeasurementStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMeasurementStatusText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMonitorState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMonitorStateText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMonitoringModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between welding control system and monitoring module."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingControlSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Monitoring Module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseLength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between electrode and its nose type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Nose Type"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseTypeName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding process and resistance spot welding operation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationControleModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding and control module."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Operation Control Module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationCurrent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between measureing module and electric current."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Operation Current"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationMeasurementModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Operation Measurement Module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationMonitoringModule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and monitoring module."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Operation Monitoring Module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between measuring module and power."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Operation Power"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Power"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationQValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding and q value."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Operation Q Value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QValue"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationQualityIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and operation quality indicator."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Operation Quality Indicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationQualityIndicator"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationVoltage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between measuring module and voltage."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Operation Voltage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Voltage"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationWeldProgram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between control module and weld program."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Operation Weld Program"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between welding machine and phase 1."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Phase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Phase1"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPhasePower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Phase1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPieceInteraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between work piece and piece piece interaction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPiece"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Piece Interaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PiecePieceInteraction"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSetPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasReferenceSetPoint"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerStatusText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Power"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasUnit"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasProcessControlStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasProcessControlStatusText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasProductQualityIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Product Quality Indicator"
+  }, {
+    "@language" : "en",
+    "@value" : "resistance between resistance spot welding operation and q value."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QValue"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPropertyEnergy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Energy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPropertyResistance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeTopAndWorkSheetTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasProperty"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasQValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between monitoring module and q value."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Q Value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QValue"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasQValueActual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasRSWOperationID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasRawProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and workpiece combination."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Raw Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPieceCombination"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasReferenceSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Resistance"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistanceBetweenElectrodeBottomAndWorkSheetBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and resistance between electrode bottom and worksheet bottom."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Resistance Between Electrode Bottom And WorkSheet Bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeBottomAndWorkSheetBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistanceBetweenElectrodeTopAndWorkSheetTop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between measuring module and contact resistance between electrode top and worksheet top."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Resistance Between Electrode Top And WorkSheet Top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeTopAndWorkSheetTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistanceUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeBottomAndWorkSheetBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasUnit"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and sensor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpatter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot  welding operation and spatter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Spatter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Spatter"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpatterOccurTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Spatter"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpotRepetition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpotRepetitionStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpotRepetitionStatusText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSqueezeStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and squeeze."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Squeeze Step"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Squeeze"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSteps"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSqueezeTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Squeeze"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSteps",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Step"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasThermalContactConductivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between worksheet top worksheet bottom interaction and thermal contact conductivity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopWorkSheetBottomInteraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Thermal Contact Conductivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ThermalContactConductivity"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasThickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasTopElectrodeWeldForce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasTopWorkSheetId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TopWorkSheet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasVoltageSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSetPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasReferenceSetPoint"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasVoltageUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Voltage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasUnit"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWaterHoleDiameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWearCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Wear Count"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldCurrent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and electric current"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Weld Current"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldCurrentTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between electric current and the time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Weld Current Time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Time"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#weldCurrentAtTime"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldFaceDiameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldForce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and weld force."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Weld Force"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldForceTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relatoin between weld force  and time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Weld Force Time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Time"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#weldForceAtTime"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between control module and weld program."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Weld Program"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceCurrentSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between weld program and electric current set point."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Weld Program Reference Current Set Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrentSetPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceSetPoint"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceEnergySetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between weld program and energy set point."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Weld Program Reference Energy Set Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#EnergySetPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceSetPoint"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferencePowerSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between weld program and power set point."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Program"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Weld Program Reference Power Set Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSetPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceSetPoint"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Weld Program Reference Set Point"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceVoltageSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between weld program and voltage set point."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Weld Program Reference Voltage Set Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSetPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceSetPoint"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldSpotDiameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpot"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldSpotQValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relatoin between weld spot and q value."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Weld Spot Q Value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QValue"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldStep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and weld."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Weld Step"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Weld"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSteps"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Weld"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingArmBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The welding gun bottom has welding arm bottom."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Welding Arm Bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingArmBottomOf"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingArmTop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The welding gun top has welding arm top."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Welding Arm Top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingArmTopOf"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingGunBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between welding machine and welding gun bottom."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Welding Gun Bottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingGunBottomOf"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingGunTop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between welding machine  and welding gun top."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Welding Gun Top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingGunTopOf"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingMachineName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingProgramID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingProgramNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingRobot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between welding machine and welding robot."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Welding Robot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingRobot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/hasPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingRobotOf"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has WorkSheet"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetBottom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPieceCombination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has WorkSheet Bottom"
+  }, {
+    "@language" : "en",
+    "@value" : "relation between work piece combination and bottom worksheet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#BottomWorkSheet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheet"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetBottomThickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between bottom worksheet and worksheet bottom thickness."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#BottomWorkSheet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has WorkSheet Bottom Thickness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetBottomThickness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetThickness"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetBottomThicknessValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetBottomThickness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasThickness"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetThickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has WorkSheet Thickness"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetTop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between work piece combination and top  worksheet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPieceCombination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has WorkSheet Top"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TopWorkSheet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheet"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetTopThickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between top worksheet and worksheet top thickness."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TopWorkSheet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has WorkSheet Top Thickness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopThickness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetThickness"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetTopThicknessValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopThickness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasThickness"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between production line and workstation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/rgom#Line"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has WorkStaion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/rgom#WorkStation"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isElectrodeCapBottomOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between electrode cap bottom and welding gun bottom."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Electrode Cap Bottom Of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/isPartOf"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isElectrodeCapTopOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between electrode cap top and welding gun top."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Electrode Cap Top Of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/isPartOf"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isOperationProductOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between weld spot and resistance spot welding operation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Operation Product Of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingArmBottomOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between welding arm bottom and welding gun bottom."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Welding Arm Bottom Of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/isPartOf"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingArmTopOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between welding arm top and welding gun top."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Welding Arm Top Of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/isPartOf"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingGunBottomOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between welding gun bottom and welding machine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Welding Gun Bottom  Of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/isPartOf"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingGunTopOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between welding gun top and welding machine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Welding Gun Top  Of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/isPartOf"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingRobotOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between welding tobot and welding machine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingRobot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Welding Robot Of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/isPartOf"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#weldCurrentAtTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between  the time andelectric current."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "weld Currrent At Time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent"
+  } ]
+}, {
+  "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#weldForceAtTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relatoin between the  time and weld force ."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "weld Force At Time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#OperationTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A temporal entity with duration."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Time:OperationTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#TemporalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A temporal interval."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Time:Termporal Entity"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#hasDateTimeStamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2006/time#OperationTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa#hasPropertyCurrent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ACLinkCurrent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasProperty"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa#hasPropertyPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Power"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasProperty"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa#hasPropertyVoltage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Voltage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/hasProperty"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa#observes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between a Sensor and an ObservableProperty that it is capable of sensing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "observes"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/ObservableProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A property that can be observed  with some sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Observable Property"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sensor - Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a Stimulus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/hasProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://w3id.org/rgom#AssemblingProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Assembling process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Assembling Process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/rgom#ManufacturingProcess"
+  } ]
+}, {
+  "@id" : "https://w3id.org/rgom#ContextualData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A contextual data provides added value information."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contextual Data"
+  } ]
+}, {
+  "@id" : "https://w3id.org/rgom#Line",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Production Line"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/rgom#Machine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "A machine (or mechanical device) is a mechanical structure (made of parts or tools) that uses power to apply forces and control movement to perform an intended action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Asset"
+  }, {
+    "@language" : "en",
+    "@value" : "Device"
+  }, {
+    "@language" : "en",
+    "@value" : "Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/rgom#Maintenance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A process performed to maintain machine or its part"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Maintenance Process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/rgom#Process"
+  } ]
+}, {
+  "@id" : "https://w3id.org/rgom#ManufacturingProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Manufacturing process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Manufacturing Process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/rgom#Process"
+  } ]
+}, {
+  "@id" : "https://w3id.org/rgom#Part",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Machine part"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Machine Part"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/rgom#Process",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "A process is a series or set of activities that interact to produce a result."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Process"
+  } ]
+}, {
+  "@id" : "https://w3id.org/rgom#Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Product of an operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "A product that is produced as a result of an operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Operation Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/rgom#WorkStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WorkStation"
+  }, {
+    "@language" : "en",
+    "@value" : "Workstation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/rgom#isPerformedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "relation between resistance spot welding operation and machine part."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is Performed By"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/rgom#Part"
+  } ]
+}, {
+  "@id" : "https://w3id.org/rgom#performsProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation between Welding Machine and Resistance Spot Welding Process."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "performsProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingProcess"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/TR/owl-time/#time:hasTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Supports the association of a temporal entity (instant or interval) to any thing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "time:hasTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2006/time#OperationTime"
+  } ]
+} ]
