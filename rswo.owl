@@ -1,0 +1,2973 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#"
+     xml:base="http://www.rswo.org/muhyah/ontologies/2022/7/rswo"
+     xmlns:WV="http://www.wurvoc.org/vocabularies/WV/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:om="http://www.ontology-of-units-of-measure.org/resource/om-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rswo="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:s4inma="https://w3id.org/def/saref4inma#"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo">
+        <dc:contributor xml:lang="en">Baifan Zhou, John G. Breslin, Ali intezar,  Evgeny Kharlamov</dc:contributor>
+        <dc:creater xml:lang="en">Muhammad Yahya (University of Galway, Ireland)</dc:creater>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <copyright xml:lang="en">Copyright (c) 2022 Open Applications Group</copyright>
+        <rdfs:comment xml:lang="en">The most recent version of this file will always be in the GitHub repository https://github.com/MuhammadYahta/rswo</rdfs:comment>
+        <rdfs:label xml:lang="en">Resistance Spot Welding Ontology</rdfs:label>
+        <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creater -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creater">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/maintainer -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/maintainer">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#copyright -->
+
+    <owl:AnnotationProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#copyright">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#rights"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#rights -->
+
+    <owl:AnnotationProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#rights"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/hasPart">
+        <rdfs:comment xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">A related resource that is included either physically or logically in the described resource.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">dcterms:hasPart</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/isPartOf">
+        <rdfs:comment xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Has Part.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">dcterms:isPartOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomInteractWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomInteractWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#InteractWith"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#BottomWorkSheet"/>
+        <rdfs:comment xml:lang="en">relation between Electrode cap bottom and bottom worksheet.</rdfs:comment>
+        <rdfs:label xml:lang="en">Electrode Bottom Interact With</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottomApplyWeldForce -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottomApplyWeldForce">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#applyWeldForce"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"/>
+        <rdfs:comment xml:lang="en">Force applied by the bottom electrode.</rdfs:comment>
+        <rdfs:label xml:lang="en">electrode Cap Bottom Apply Weld Force</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTopApplyWeldForce -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTopApplyWeldForce">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#applyWeldForce"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"/>
+        <rdfs:comment xml:lang="en">Force applied by the top electrode.</rdfs:comment>
+        <rdfs:label xml:lang="en">electrode Cap Top Apply Weld Force</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopInteractWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopInteractWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#InteractWith"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TopWorkSheet"/>
+        <rdfs:comment xml:lang="en">relation between electrode cap top and top worksheet.</rdfs:comment>
+        <rdfs:label xml:lang="en">Electrode Top Interact With</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#InteractWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#InteractWith">
+        <rdfs:label xml:lang="en">InteractWith</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ObservesCurrent -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ObservesCurrent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa#observes"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#CurrentSensor"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ACLinkCurrent"/>
+        <rdfs:comment xml:lang="en">Relation between a Current Sensor and an Ac Link Current.</rdfs:comment>
+        <rdfs:label xml:lang="en">observes Current</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ObservesPower -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ObservesPower">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa#observes"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSensor"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Power"/>
+        <rdfs:comment xml:lang="en">Relation between a Power Sensor and power.</rdfs:comment>
+        <rdfs:label xml:lang="en">observes Power</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ObservesVoltage -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ObservesVoltage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa#observes"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSensor"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Voltage"/>
+        <rdfs:comment xml:lang="en">Relation between a Voltage Sensor and Voltage.</rdfs:comment>
+        <rdfs:label xml:lang="en">observes Voltage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#applyWeldForce -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#applyWeldForce">
+        <rdfs:comment xml:lang="en">The Force/pressure applied for welding</rdfs:comment>
+        <rdfs:label xml:lang="en">apply Weld Force</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#belongsToProductionLine -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#belongsToProductionLine">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Machine"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Line"/>
+        <rdfs:comment xml:lang="en">The relation between Machine and Production Line.</rdfs:comment>
+        <rdfs:label xml:lang="en">belongs To Production Line</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasControlModule -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasControlModule">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingControlSystem"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"/>
+        <rdfs:comment xml:lang="en">relation between welding control system and control module.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Control Module</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasCurrent -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasCurrent">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent"/>
+        <rdfs:label xml:lang="en">has Current</rdfs:label>
+        <rdfs:label xml:lang="en">relation between weld force and electric current.</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasDiameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasDiameter">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Product"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Diameter"/>
+        <rdfs:comment xml:lang="en">relation between weld spot and diameter.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Diameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasDressCount -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasDressCount">
+        <rdfs:comment xml:lang="en">relation between electrode and dress.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Dress Count</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrode -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrode">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Electrode"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and electrode.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Electrode</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomDressCount -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomDressCount">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasDressCount"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomDressCount"/>
+        <rdfs:comment xml:lang="en">relation between electrode cap bottom and electrode bottom dress.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Electrode Bottom Dress Count</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomNoseType -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomNoseType">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseType"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType"/>
+        <rdfs:comment xml:lang="en">relation between electrode bottom and its nose type.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Electrode Bottom Nose Type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomWearCount -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomWearCount">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWearCount"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomWearCount"/>
+        <rdfs:comment xml:lang="en">relation between electrode cap bottom and electrode bottom wear count.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Electrode Bottom Wear Count</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottom -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottom">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <owl:inverseOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isElectrodeCapBottomOf"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"/>
+        <rdfs:comment xml:lang="en">The welding gun bottom has part electrode cap bottom.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Electrode Cap Bottom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTop -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTop">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <owl:inverseOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isElectrodeCapTopOf"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"/>
+        <rdfs:comment xml:lang="en">The welding gun top has part electrode cap top.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Electrode Cap Top</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopDressCount -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopDressCount">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasDressCount"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopDressCount"/>
+        <rdfs:comment xml:lang="en">relation between  electrode cap top and electrode top dress.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Electrode Top Dress Count</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopNoseType -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopNoseType">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseType"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType"/>
+        <rdfs:comment xml:lang="en">relation between electrode top and its nose type.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Electrode Top Nose Type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopWearCount -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopWearCount">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWearCount"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopWearCount"/>
+        <rdfs:comment xml:lang="en">relation between electrode cap top and electrode top wear count.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Electrode Top Wear Count</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasEnergy -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasEnergy">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Energy"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and energy.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Energy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasHoldStep -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasHoldStep">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSteps"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Hold"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and hold step.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Hold Step</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasInteraction -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasInteraction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PiecePieceInteraction"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and the piece piece interaction.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Interaction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfElectrodeBottom -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfElectrodeBottom">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfElectrodeBottom"/>
+        <rdfs:label xml:lang="en">has Material Resistance Of Electrode Bottom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfElectrodeTop -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfElectrodeTop">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfElectrodeTop"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and material resistance of electrode top.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Material Resistance Of Electrode Top</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfWorkSheetBottom -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfWorkSheetBottom">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfWorkSheetBottom"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and material resistance of worksheet bottom.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Material Resistance Of Worksheet Bottom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfWorkSheetTop -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMaterialResistanceOfWorkSheetTop">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfWorkSheetTop"/>
+        <rdfs:label xml:lang="en">has Material Resistance Of WorkSheet Top</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMeasurementModule -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMeasurementModule">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingControlSystem"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"/>
+        <rdfs:comment xml:lang="en">relation between welding control system and measuring module.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Measurement Module</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMonitoringModule -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMonitoringModule">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingControlSystem"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"/>
+        <rdfs:comment xml:lang="en">relation between welding control system and monitoring module.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Monitoring Module</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseType -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseType">
+        <rdfs:comment xml:lang="en">relation between electrode and its nose type.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Nose Type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperation -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperation">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingProcess"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding process and resistance spot welding operation.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Operation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationControleModule -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationControleModule">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding and control module.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Operation Control Module</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationCurrent -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationCurrent">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent"/>
+        <rdfs:comment xml:lang="en">relation between measureing module and electric current.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Operation Current</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationMeasurementModule -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationMeasurementModule">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"/>
+        <rdfs:label xml:lang="en">has Operation Measurement Module</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationMonitoringModule -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationMonitoringModule">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and monitoring module.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Operation Monitoring Module</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationPower -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationPower">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Power"/>
+        <rdfs:comment xml:lang="en">relation between measuring module and power.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Operation Power</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationQValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationQValue">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QValue"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding and q value.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Operation Q Value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationQualityIndicator -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationQualityIndicator">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationQualityIndicator"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and operation quality indicator.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Operation Quality Indicator</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationVoltage -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationVoltage">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Voltage"/>
+        <rdfs:comment xml:lang="en">relation between measuring module and voltage.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Operation Voltage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationWeldProgram -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasOperationWeldProgram">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram"/>
+        <rdfs:comment xml:lang="en">relation between control module and weld program.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Operation Weld Program</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPhase -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPhase">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Phase1"/>
+        <rdfs:comment xml:lang="en">relation between welding machine and phase 1.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Phase</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPieceInteraction -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPieceInteraction">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPiece"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PiecePieceInteraction"/>
+        <rdfs:comment xml:lang="en">relation between work piece and piece piece interaction.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Piece Interaction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasProductQualityIndicator -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasProductQualityIndicator">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QValue"/>
+        <rdfs:label xml:lang="en">has Product Quality Indicator</rdfs:label>
+        <rdfs:label xml:lang="en">resistance between resistance spot welding operation and q value.</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasQValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasQValue">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QValue"/>
+        <rdfs:comment xml:lang="en">relation between monitoring module and q value.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Q Value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasRawProduct -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasRawProduct">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPieceCombination"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and workpiece combination.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Raw Product</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance">
+        <rdfs:label xml:lang="en">has Resistance</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistanceBetweenElectrodeBottomAndWorkSheetBottom -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistanceBetweenElectrodeBottomAndWorkSheetBottom">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeBottomAndWorkSheetBottom"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and resistance between electrode bottom and worksheet bottom.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Resistance Between Electrode Bottom And WorkSheet Bottom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistanceBetweenElectrodeTopAndWorkSheetTop -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistanceBetweenElectrodeTopAndWorkSheetTop">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistance"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeTopAndWorkSheetTop"/>
+        <rdfs:comment xml:lang="en">relation between measuring module and contact resistance between electrode top and worksheet top.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Resistance Between Electrode Top And WorkSheet Top</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSensor">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and sensor.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Sensor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpatter -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpatter">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Spatter"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot  welding operation and spatter.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Spatter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSqueezeStep -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSqueezeStep">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSteps"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Squeeze"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and squeeze.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Squeeze Step</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSteps -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSteps">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:label xml:lang="en">has Step</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasThermalContactConductivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasThermalContactConductivity">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopWorkSheetBottomInteraction"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ThermalContactConductivity"/>
+        <rdfs:comment xml:lang="en">relation between worksheet top worksheet bottom interaction and thermal contact conductivity.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Thermal Contact Conductivity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWearCount -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWearCount">
+        <rdfs:label xml:lang="en">has Wear Count</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldCurrent -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldCurrent">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and electric current</rdfs:comment>
+        <rdfs:label xml:lang="en">has Weld Current</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldCurrentTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldCurrentTime">
+        <owl:inverseOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#weldCurrentAtTime"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Time"/>
+        <rdfs:comment xml:lang="en">relation between electric current and the time.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Weld Current Time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldForce -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldForce">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and weld force.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Weld Force</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldForceTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldForceTime">
+        <owl:inverseOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#weldForceAtTime"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Time"/>
+        <rdfs:comment xml:lang="en">relatoin between weld force  and time.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Weld Force Time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgram -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgram">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram"/>
+        <rdfs:comment xml:lang="en">relation between control module and weld program.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Weld Program</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceCurrentSetPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceCurrentSetPoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceSetPoint"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrentSetPoint"/>
+        <rdfs:comment xml:lang="en">relation between weld program and electric current set point.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Weld Program Reference Current Set Point</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceEnergySetPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceEnergySetPoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceSetPoint"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#EnergySetPoint"/>
+        <rdfs:comment xml:lang="en">relation between weld program and energy set point.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Weld Program Reference Energy Set Point</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferencePowerSetPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferencePowerSetPoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceSetPoint"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Program"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSetPoint"/>
+        <rdfs:comment xml:lang="en">relation between weld program and power set point.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Weld Program Reference Power Set Point</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceSetPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceSetPoint">
+        <rdfs:label xml:lang="en">has Weld Program Reference Set Point</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceVoltageSetPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceVoltageSetPoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldProgramReferenceSetPoint"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSetPoint"/>
+        <rdfs:comment xml:lang="en">relation between weld program and voltage set point.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Weld Program Reference Voltage Set Point</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldSpotQValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldSpotQValue">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpot"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QValue"/>
+        <rdfs:comment xml:lang="en">relatoin between weld spot and q value.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Weld Spot Q Value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldStep -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldStep">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSteps"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Weld"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and weld.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Weld Step</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingArmBottom -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingArmBottom">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <owl:inverseOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingArmBottomOf"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmBottom"/>
+        <rdfs:comment xml:lang="en">The welding gun bottom has welding arm bottom.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Welding Arm Bottom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingArmTop -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingArmTop">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <owl:inverseOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingArmTopOf"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmTop"/>
+        <rdfs:comment xml:lang="en">The welding gun top has welding arm top.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Welding Arm Top</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingGunBottom -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingGunBottom">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <owl:inverseOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingGunBottomOf"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom"/>
+        <rdfs:comment xml:lang="en">relation between welding machine and welding gun bottom.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Welding Gun Bottom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingGunTop -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingGunTop">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <owl:inverseOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingGunTopOf"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop"/>
+        <rdfs:comment xml:lang="en">relation between welding machine  and welding gun top.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Welding Gun Top</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingRobot -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingRobot">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <owl:inverseOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingRobotOf"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingRobot"/>
+        <rdfs:comment xml:lang="en">relation between welding machine and welding robot.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Welding Robot</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheet -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheet">
+        <rdfs:label xml:lang="en">has WorkSheet</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetBottom -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetBottom">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheet"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPieceCombination"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#BottomWorkSheet"/>
+        <rdfs:label xml:lang="en">has WorkSheet Bottom</rdfs:label>
+        <rdfs:label xml:lang="en">relation between work piece combination and bottom worksheet</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetBottomThickness -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetBottomThickness">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetThickness"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#BottomWorkSheet"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetBottomThickness"/>
+        <rdfs:comment xml:lang="en">relation between bottom worksheet and worksheet bottom thickness.</rdfs:comment>
+        <rdfs:label xml:lang="en">has WorkSheet Bottom Thickness</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetThickness -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetThickness">
+        <rdfs:label xml:lang="en">has WorkSheet Thickness</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetTop -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetTop">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheet"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPieceCombination"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TopWorkSheet"/>
+        <rdfs:comment xml:lang="en">relation between work piece combination and top  worksheet</rdfs:comment>
+        <rdfs:label xml:lang="en">has WorkSheet Top</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetTopThickness -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetTopThickness">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetThickness"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TopWorkSheet"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopThickness"/>
+        <rdfs:comment xml:lang="en">relation between top worksheet and worksheet top thickness.</rdfs:comment>
+        <rdfs:label xml:lang="en">has WorkSheet Top Thickness</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkStation -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkStation">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Line"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#WorkStation"/>
+        <rdfs:comment xml:lang="en">relation between production line and workstation.</rdfs:comment>
+        <rdfs:label xml:lang="en">has WorkStaion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isElectrodeCapBottomOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isElectrodeCapBottomOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom"/>
+        <rdfs:comment xml:lang="en">relation between electrode cap bottom and welding gun bottom.</rdfs:comment>
+        <rdfs:label xml:lang="en">is Electrode Cap Bottom Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isElectrodeCapTopOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isElectrodeCapTopOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop"/>
+        <rdfs:comment xml:lang="en">relation between electrode cap top and welding gun top.</rdfs:comment>
+        <rdfs:label xml:lang="en">is Electrode Cap Top Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isOperationProductOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isOperationProductOf">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpot"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:comment xml:lang="en">relation between weld spot and resistance spot welding operation.</rdfs:comment>
+        <rdfs:label xml:lang="en">is Operation Product Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingArmBottomOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingArmBottomOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmBottom"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom"/>
+        <rdfs:comment xml:lang="en">relation between welding arm bottom and welding gun bottom.</rdfs:comment>
+        <rdfs:label xml:lang="en">is Welding Arm Bottom Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingArmTopOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingArmTopOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmTop"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop"/>
+        <rdfs:comment xml:lang="en">relation between welding arm top and welding gun top.</rdfs:comment>
+        <rdfs:label xml:lang="en">is Welding Arm Top Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingGunBottomOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingGunBottomOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"/>
+        <rdfs:comment xml:lang="en">relation between welding gun bottom and welding machine.</rdfs:comment>
+        <rdfs:label xml:lang="en">is Welding Gun Bottom  Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingGunTopOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingGunTopOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"/>
+        <rdfs:comment xml:lang="en">relation between welding gun top and welding machine.</rdfs:comment>
+        <rdfs:label xml:lang="en">is Welding Gun Top  Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingRobotOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isWeldingRobotOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingRobot"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"/>
+        <rdfs:comment xml:lang="en">relation between welding tobot and welding machine.</rdfs:comment>
+        <rdfs:label xml:lang="en">is Welding Robot Of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#weldCurrentAtTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#weldCurrentAtTime">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Time"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent"/>
+        <rdfs:comment xml:lang="en">relation between  the time andelectric current.</rdfs:comment>
+        <rdfs:label xml:lang="en">weld Currrent At Time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#weldForceAtTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#weldForceAtTime">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Time"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"/>
+        <rdfs:comment xml:lang="en">relatoin between the  time and weld force .</rdfs:comment>
+        <rdfs:label xml:lang="en">weld Force At Time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa#observes -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa#observes">
+        <rdfs:comment xml:lang="en">relation between a Sensor and an ObservableProperty that it is capable of sensing</rdfs:comment>
+        <rdfs:label xml:lang="en">observes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isPerformedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isPerformedBy">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Part"/>
+        <rdfs:comment xml:lang="en">relation between resistance spot welding operation and machine part.</rdfs:comment>
+        <rdfs:label xml:lang="en">is Performed By</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#performsProcess -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#performsProcess">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"/>
+        <rdfs:range rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingProcess"/>
+        <rdfs:comment xml:lang="en">Relation between Welding Machine and Resistance Spot Welding Process.</rdfs:comment>
+        <rdfs:label xml:lang="en">performsProcess</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3.org/TR/owl-time/#time:hasTime -->
+
+    <owl:ObjectProperty rdf:about="https://www.w3.org/TR/owl-time/#time:hasTime">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#OperationTime"/>
+        <rdfs:comment xml:lang="en">Supports the association of a temporal entity (instant or interval) to any thing.</rdfs:comment>
+        <rdfs:label xml:lang="en">time:hasTime</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#CurrentControlModeStatusText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#CurrentControlModeStatusText">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasAdditionalProcessControlStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasAdditionalProcessControlStatus">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasAdditionalProcessControlStatusText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasAdditionalProcessControlStatusText">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasBottomElectrodeWeldForce -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasBottomElectrodeWeldForce">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasBottomWorkSheetId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasBottomWorkSheetId">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#BottomWorkSheet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasCurrentControlModeStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasCurrentControlModeStatus">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasCurrentSetPoint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasCurrentSetPoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasReferenceSetPoint"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrentSetPoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectricCurrentUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectricCurrentUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasUnit"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ACLinkCurrent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomNoseLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomNoseLength">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseLength"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomNoseTypeName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomNoseTypeName">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseTypeName"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomWaterHoleDiameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomWaterHoleDiameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWaterHoleDiameter"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomWeldFaceDiameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeBottomWeldFaceDiameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldFaceDiameter"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottomDressCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottomDressCount">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapDressCount"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomDressCount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottomNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottomNumber">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottomWearCountNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapBottomWearCountNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapWearCount"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomWearCount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapDressCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapDressCount"/>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTopDressCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTopDressCount">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapDressCount"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopDressCount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTopNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTopNumber">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTopWearCountNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapTopWearCountNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapWearCount"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopWearCount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapWearCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeCapWearCount"/>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopNoseLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopNoseLength">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseLength"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopNoseTypeName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopNoseTypeName">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseTypeName"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopWaterHoleDiameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopWaterHoleDiameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWaterHoleDiameter"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopWeldFaceDiameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasElectrodeTopWeldFaceDiameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldFaceDiameter"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasEnergySetPoint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasEnergySetPoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasReferenceSetPoint"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#EnergySetPoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasEnergyUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasEnergyUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasUnit"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Energy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasHoldTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasHoldTime">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Hold"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMeasurementStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMeasurementStatus">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMeasurementStatusText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMeasurementStatusText">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMonitorState -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMonitorState">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMonitorStateText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasMonitorStateText">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseLength"/>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseTypeName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasNoseTypeName"/>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPhasePower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPhasePower">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Phase1"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerSetPoint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerSetPoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasReferenceSetPoint"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSetPoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerStatus">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerStatusText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerStatusText">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPowerUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasUnit"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Power"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasProcessControlStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasProcessControlStatus">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasProcessControlStatusText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasProcessControlStatusText">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPropertyEnergy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPropertyEnergy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa/hasProperty"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Energy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPropertyResistance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasPropertyResistance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa/hasProperty"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeTopAndWorkSheetTop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasQValueActual -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasQValueActual">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasRSWOperationID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasRSWOperationID">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasReferenceSetPoint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasReferenceSetPoint"/>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistanceUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasResistanceUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasUnit"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeBottomAndWorkSheetBottom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpatterOccurTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpatterOccurTime">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Spatter"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpotRepetition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpotRepetition">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpot"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpotRepetitionStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpotRepetitionStatus">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpotRepetitionStatusText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSpotRepetitionStatusText">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSqueezeTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasSqueezeTime">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Squeeze"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasThickness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasThickness"/>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasTopElectrodeWeldForce -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasTopElectrodeWeldForce">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasTopWorkSheetId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasTopWorkSheetId">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TopWorkSheet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasUnit"/>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasVoltageSetPoint -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasVoltageSetPoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasReferenceSetPoint"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSetPoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasVoltageUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasVoltageUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasUnit"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Voltage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWaterHoleDiameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWaterHoleDiameter"/>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldFaceDiameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldFaceDiameter"/>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldSpotDiameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldSpotDiameter">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpot"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldTime">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Weld"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingMachineName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingMachineName">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingProgramID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingProgramID">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingProgramNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWeldingProgramNumber">
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetBottomThicknessValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetBottomThicknessValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasThickness"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetBottomThickness"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetTopThicknessValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasWorkSheetTopThicknessValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#hasThickness"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopThickness"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasDateTimeStamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#hasDateTimeStamp">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#OperationTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa#hasPropertyCurrent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa#hasPropertyCurrent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa/hasProperty"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ACLinkCurrent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa#hasPropertyPower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa#hasPropertyPower">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa/hasProperty"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Power"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa#hasPropertyVoltage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa#hasPropertyVoltage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/sosa/hasProperty"/>
+        <rdfs:domain rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Voltage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/hasProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa/hasProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000001 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000001">
+        <rdfs:comment xml:lang="en">Software is any set of machine-readable instructions (most often in the form of a computer program) that conform to a given syntax (sometimes referred to as a language) that is interpretable by a given processor and that directs a computer&apos;s processor to perform specific operations.</rdfs:comment>
+        <rdfs:label xml:lang="en">Software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/MilliMetre -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/MilliMetre">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:comment xml:lang="en">Millimeter.</rdfs:comment>
+        <rdfs:label xml:lang="en">MilliMeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/Unit -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit">
+        <rdfs:comment xml:lang="en">Unit of measure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Unit Of Measure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ACLinkCurrent -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ACLinkCurrent">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent"/>
+        <rdfs:comment xml:lang="en">AC-Link current.</rdfs:comment>
+        <rdfs:label xml:lang="en">AC Link Current</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Ampere -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Ampere">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:comment xml:lang="en">The SI unit of current.</rdfs:comment>
+        <rdfs:label xml:lang="en">Amphere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Area -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Area">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The quantity that expresses the extent of a two-dimensional figure or shape, or planar lamina, in the plane.</rdfs:comment>
+        <rdfs:label xml:lang="en">Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Assembly -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Assembly">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPieceCombination"/>
+        <rdfs:comment xml:lang="en">Assembly</rdfs:comment>
+        <rdfs:label xml:lang="en">Assembly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#BottomWorkSheet -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#BottomWorkSheet">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPiece"/>
+        <rdfs:comment xml:lang="en">Bottom worksheet</rdfs:comment>
+        <rdfs:label xml:lang="en">Bottom WorkSheet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactArea -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactArea">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Area"/>
+        <rdfs:comment xml:lang="en">An area of contact.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contact Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactHeatTransferCoefficient -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactHeatTransferCoefficient">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#HeatTransferCoefficient"/>
+        <rdfs:comment xml:lang="en">Contact heat transfer coefficient.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contact Heat Transfer Coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeBottomAndWorkSheetBottom -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeBottomAndWorkSheetBottom">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance"/>
+        <rdfs:comment xml:lang="en">The resistance caused by the passage of electric current in the workpiece.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contact Resistance Between ElectrodeBottom And WorkSheetBottom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeTopAndWorkSheetTop -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ContactResistanceBetweenElectrodeTopAndWorkSheetTop">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance"/>
+        <rdfs:comment xml:lang="en">The resistance caused by the passage of electric current in the workpiece.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contact Resistance Between ElectrodeTop And WorkSheet Top</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlModule">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FunctionalModule"/>
+        <rdfs:comment xml:lang="en">Control module.</rdfs:comment>
+        <rdfs:label xml:lang="en">Control Module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlSystem -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlSystem">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:comment xml:lang="en">Control system</rdfs:comment>
+        <rdfs:label xml:lang="en">Control System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Count -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Count">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#ContextualData"/>
+        <rdfs:comment xml:lang="en">a number of occurance of a thing.</rdfs:comment>
+        <rdfs:label xml:lang="en">Count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#CurrentSensor -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#CurrentSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:comment xml:lang="en">A current sensor is a device that detects electric current in a wire and generates a signal proportional to that current. The generated signal could be analog voltage or current or a digital output. The generated signal can be then used to display the measured current in an ammeter, or can be stored for further analysis in a data acquisition system, or can be used for the purpose of control.</rdfs:comment>
+        <rdfs:label xml:lang="en">Current Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#DCLinkCurrent -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#DCLinkCurrent">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent"/>
+        <rdfs:comment xml:lang="en">DC-Link current.</rdfs:comment>
+        <rdfs:label xml:lang="en">DC Link Current</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Diameter -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Diameter">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">Diameter.</rdfs:comment>
+        <rdfs:label xml:lang="en">Diameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#DressCount -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#DressCount">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Count"/>
+        <rdfs:comment xml:lang="en">Dress count.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dress Count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Dressing -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Dressing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Maintenance"/>
+        <rdfs:isDefinedBy xml:lang="en">Process of dressing.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Dressing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">Electric current supplied in welding.</rdfs:comment>
+        <rdfs:label xml:lang="en">Electric Current</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrentSetPoint -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectricCurrentSetPoint">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ReferenceSetPoint"/>
+        <rdfs:label xml:lang="en">Electric Current Set Point</rdfs:label>
+        <rdfs:label xml:lang="en">The reference value set for electric current</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Electrode -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Electrode">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Part"/>
+        <owl:disjointWith rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingRobot"/>
+        <rdfs:comment xml:lang="en">Electrode.</rdfs:comment>
+        <rdfs:label xml:lang="en">Electrode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomDressCount -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomDressCount">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#DressCount"/>
+        <rdfs:comment xml:lang="en">Dressings for electrode bottom.</rdfs:comment>
+        <rdfs:label xml:lang="en">Electrode Bottom Dress Count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomWearCount -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomWearCount">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WearCount"/>
+        <rdfs:comment xml:lang="en">wear occured  for electrode bottom.</rdfs:comment>
+        <rdfs:label xml:lang="en">Electrode Bottom Wear Count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomWorksheetBottomInteraction -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeBottomWorksheetBottomInteraction">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MachinePartPieceInteraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Electrode"/>
+        <rdfs:comment xml:lang="en">Electrode cap bottom</rdfs:comment>
+        <rdfs:label xml:lang="en">Electrode Cap Bottom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapTop">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Electrode"/>
+        <rdfs:comment xml:lang="en">Electrode cap top.</rdfs:comment>
+        <rdfs:label xml:lang="en">Electrode Cap Top</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopDressCount -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopDressCount">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#DressCount"/>
+        <rdfs:comment xml:lang="en">Dressings for electrode top.</rdfs:comment>
+        <rdfs:label xml:lang="en">Electrode Top Dress Count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopWearCount -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopWearCount">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WearCount"/>
+        <rdfs:comment xml:lang="en">wear occured for electrode top.</rdfs:comment>
+        <rdfs:label xml:lang="en">Electrode Top Wear Count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopWorksheetTopInteraction -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeTopWorksheetTopInteraction">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MachinePartPieceInteraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Energy -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Energy">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#EnergySetPoint -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#EnergySetPoint">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ReferenceSetPoint"/>
+        <rdfs:comment xml:lang="en">The reference value set for energy</rdfs:comment>
+        <rdfs:label xml:lang="en">Energy Set Point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FrictionCoefficient -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FrictionCoefficient">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The dimensionless scalar value which describes the ratio of the force of friction between two bodies and the force pressing them together.</rdfs:comment>
+        <rdfs:label xml:lang="en">Friction Coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FunctionalModule -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FunctionalModule">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:comment xml:lang="en">Functional module.</rdfs:comment>
+        <rdfs:label xml:lang="en">Functional Module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#HeatTransferCoefficient -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#HeatTransferCoefficient">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The proportionality constant between the heat flux and the thermodynamic driving force for the flow of heat (i.e., the temperature difference).</rdfs:comment>
+        <rdfs:label xml:lang="en">Heat Transfer Coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Hold -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Hold">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationSteps"/>
+        <rdfs:comment xml:lang="en">The activity inwhich pieces are hold to interact with each other.</rdfs:comment>
+        <rdfs:label xml:lang="en">Hold</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Inch -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Inch">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:comment xml:lang="en">Inch unit</rdfs:comment>
+        <rdfs:label xml:lang="en">Inch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Interaction -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Interaction">
+        <rdfs:comment xml:lang="en">Interaction between something.</rdfs:comment>
+        <rdfs:label xml:lang="en">Interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Joules -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Joules">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:comment xml:lang="en">The unit of pressure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Joules</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#LB-Force -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#LB-Force">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:comment xml:lang="en">LB-Force</rdfs:comment>
+        <rdfs:comment xml:lang="en">Lb force.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MachinePartPieceInteraction -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MachinePartPieceInteraction">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Interaction"/>
+        <rdfs:comment xml:lang="en">The interaction between Machine Part and Piece</rdfs:comment>
+        <rdfs:label xml:lang="en">Machine Part Piece Interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfElectrodeBottom -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfElectrodeBottom">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance"/>
+        <rdfs:comment xml:lang="en">Material resistance of electrode bottom.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material Resistance Of Electrode Bottom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfElectrodeTop -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfElectrodeTop">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance"/>
+        <rdfs:comment xml:lang="en">Material resistance of electrode top.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material Resistance Of Electrode Top</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfWorkSheetBottom -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfWorkSheetBottom">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance"/>
+        <rdfs:comment xml:lang="en">Material resistance of Worksheet bottom.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material Resistance Of WorkSheetBottom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfWorkSheetTop -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MaterialResistanceOfWorkSheetTop">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance"/>
+        <rdfs:comment xml:lang="en">Material resistance of Worksheet top.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material Resistance Of WorkSheet Top</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MeasuringModule">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FunctionalModule"/>
+        <rdfs:comment xml:lang="en">Measuring module.</rdfs:comment>
+        <rdfs:label xml:lang="en">Measuring Module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#MonitoringModule">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#FunctionalModule"/>
+        <rdfs:comment xml:lang="en">Monitoring module.</rdfs:comment>
+        <rdfs:label xml:lang="en">Monitoring Module</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#NoseType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Nose Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Ohm -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Ohm">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:comment xml:lang="en">The unit of resistance.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ohm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Operation -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Operation">
+        <rdfs:comment xml:lang="en">Operation</rdfs:comment>
+        <rdfs:label xml:lang="en">Operation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationQualityIndicator -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationQualityIndicator">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ProductQualityIndicator"/>
+        <rdfs:comment xml:lang="en">Quality indicator related to an operation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Operation Quality Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationSteps -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationSteps">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">Sets of actvities involve in an operations</rdfs:comment>
+        <rdfs:label xml:lang="en">Operation Steps</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Phase1 -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Phase1">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">Phase 1.</rdfs:comment>
+        <rdfs:label xml:lang="en">Phase 1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity">
+        <rdfs:comment xml:lang="en">A tangible thing</rdfs:comment>
+        <rdfs:label xml:lang="en">Physical Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PiecePieceInteraction -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PiecePieceInteraction">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Interaction"/>
+        <rdfs:comment xml:lang="en">Interaction between work sheets (Work pieces)</rdfs:comment>
+        <rdfs:label xml:lang="en">Piece Piece Interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Power -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Power">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">Power.</rdfs:comment>
+        <rdfs:label xml:lang="en">Power</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSensor -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:comment xml:lang="en">50Hz / 60Hz</rdfs:comment>
+        <rdfs:label xml:lang="en">Power Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSetPoint -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PowerSetPoint">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ReferenceSetPoint"/>
+        <rdfs:comment xml:lang="en">The reference value set for power</rdfs:comment>
+        <rdfs:label xml:lang="en">Power Set Point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ProductQualityIndicator -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ProductQualityIndicator">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QualityIndicator"/>
+        <rdfs:comment xml:lang="en">Quality indicator related to a product.</rdfs:comment>
+        <rdfs:label xml:lang="en">Product Quality Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Program -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Program">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000001"/>
+        <rdfs:comment xml:lang="en">Program.</rdfs:comment>
+        <rdfs:label xml:lang="en">Program</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QValue -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QValue">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">A Bosch value to measure the quality of weld</rdfs:comment>
+        <rdfs:label xml:lang="en">Q-Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QualityIndicator -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QualityIndicator">
+        <rdfs:comment xml:lang="en">Quality indicator of an operation and product</rdfs:comment>
+        <rdfs:label xml:lang="en">Quality Indicator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ReferenceSetPoint -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ReferenceSetPoint">
+        <rdfs:comment xml:lang="en">Reference set point</rdfs:comment>
+        <rdfs:label xml:lang="en">Reference Set Point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Resistance">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">Resistance.</rdfs:comment>
+        <rdfs:label xml:lang="en">Resistance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSetPoint -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSetPoint">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ReferenceSetPoint"/>
+        <rdfs:comment xml:lang="en">The reference value set for Resistance</rdfs:comment>
+        <rdfs:label xml:lang="en">Resistance Set Point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Operation"/>
+        <rdfs:comment xml:lang="en">Resistance Spot Welding (RSW) Operation</rdfs:comment>
+        <rdfs:label xml:lang="en">RSW Operation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingProcess -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#AssemblingProcess"/>
+        <rdfs:comment xml:lang="en">Resistance spot welding process.</rdfs:comment>
+        <rdfs:label xml:lang="en">Resistance Spot Welding Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Spatter -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Spatter">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">splashes produced during the welding</rdfs:comment>
+        <rdfs:label xml:lang="en">Spatter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Squeeze -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Squeeze">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationSteps"/>
+        <rdfs:comment xml:lang="en">The activites inwhich force is applied to the pieces.</rdfs:comment>
+        <rdfs:label xml:lang="en">Squeeze</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TensileShearStrength -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TensileShearStrength">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#QualityIndicator"/>
+        <rdfs:comment xml:lang="en">Tensile shear strength.</rdfs:comment>
+        <rdfs:label xml:lang="en">Tensile Shear Strength</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ThermalConductivity -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ThermalConductivity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The ability to conduct heat.</rdfs:comment>
+        <rdfs:label xml:lang="en">Thermal Conductivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ThermalContactConductivity -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ThermalContactConductivity">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ThermalConductivity"/>
+        <rdfs:label xml:lang="en">Thermal Contact Conductivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Thickness -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Thickness">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">thickness.</rdfs:comment>
+        <rdfs:label xml:lang="en">Thickness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Time -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Time">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment>Time at which some property is observed.</rdfs:comment>
+        <rdfs:label>Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TopWorkSheet -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#TopWorkSheet">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPiece"/>
+        <rdfs:comment xml:lang="en">Top worksheet</rdfs:comment>
+        <rdfs:label xml:lang="en">Top WorkSheet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Voltage -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Voltage">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">Voltage.</rdfs:comment>
+        <rdfs:label xml:lang="en">Voltage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSensor -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:comment xml:lang="en">This sensor is used to monitor, calculate and determine the voltage supply. This sensor can determine the AC or DC voltage level.</rdfs:comment>
+        <rdfs:label xml:lang="en">Voltage Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSetPoint -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#VoltageSetPoint">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ReferenceSetPoint"/>
+        <rdfs:comment xml:lang="en">The reference value set for voltage</rdfs:comment>
+        <rdfs:label xml:lang="en">Voltage Set Point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Watts -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Watts">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
+        <rdfs:comment xml:lang="en">The unit of power.</rdfs:comment>
+        <rdfs:label xml:lang="en">Watts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WearCount -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WearCount">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Count"/>
+        <rdfs:comment xml:lang="en">Wear count.</rdfs:comment>
+        <rdfs:label xml:lang="en">Wear Count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Weld -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Weld">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#OperationSteps"/>
+        <rdfs:comment xml:lang="en">The activity inwhcih the current is flowed through the piece to generate some resistance to produce spot</rdfs:comment>
+        <rdfs:label xml:lang="en">Weld</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldForce">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">weld force.</rdfs:comment>
+        <rdfs:label xml:lang="en">Weld Force</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldProgram">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Program"/>
+        <rdfs:comment xml:lang="en">Weld program.</rdfs:comment>
+        <rdfs:label xml:lang="en">Weld Program</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpot -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpot">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Product"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#isOperationProductOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ResistanceSpotWeldingOperation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Weld spot is a weld nugget, a pool of molten metal that quickly cools and solidifies into a round joint.</rdfs:comment>
+        <rdfs:label xml:lang="en">Weld Nugget</rdfs:label>
+        <rdfs:label xml:lang="en">Weld Spot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpotDiameter -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldSpotDiameter">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Diameter"/>
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ProductQualityIndicator"/>
+        <rdfs:comment xml:lang="en">Diameter of a weld nugget.</rdfs:comment>
+        <rdfs:label xml:lang="en">Weld Spot Diameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmBottom -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmBottom">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Part"/>
+        <rdfs:comment xml:lang="en">Welding arm bottom</rdfs:comment>
+        <rdfs:label xml:lang="en">Welding Arm Bottom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmTop -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingArmTop">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Part"/>
+        <rdfs:comment xml:lang="en">Welding arm top</rdfs:comment>
+        <rdfs:label xml:lang="en">Welding Arm Top</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingControlSystem -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingControlSystem">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ControlSystem"/>
+        <rdfs:comment xml:lang="en">A control system used for instruction.</rdfs:comment>
+        <rdfs:label xml:lang="en">Welding Control System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Part"/>
+        <rdfs:comment xml:lang="en">Welding gun bottom</rdfs:comment>
+        <rdfs:label xml:lang="en">Welding Gun Bottom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunTop">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Part"/>
+        <rdfs:label xml:lang="en">Welding Gun Top</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingMachine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Machine"/>
+        <rdfs:comment xml:lang="en">Machine that is used to perform a welding operation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Welding Machine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingRobot -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingRobot">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Part"/>
+        <rdfs:comment xml:lang="en">Welding Robot</rdfs:comment>
+        <rdfs:label xml:lang="en">Welding Robot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPiece -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPiece">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"/>
+        <rdfs:comment xml:lang="en">Work piece</rdfs:comment>
+        <rdfs:label xml:lang="en">Work Piece</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPieceCombination -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkPieceCombination">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"/>
+        <rdfs:comment xml:lang="en">the worksheets are combine together to produce a product that is known as Raw product</rdfs:comment>
+        <rdfs:label xml:lang="en">WorkPiece Combination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetBottomThickness -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetBottomThickness">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Thickness"/>
+        <rdfs:comment xml:lang="en">Sheet Thickness</rdfs:comment>
+        <rdfs:label xml:lang="en">Work Sheet Bottom Thickness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopThickness -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopThickness">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#Thickness"/>
+        <rdfs:comment xml:lang="en">Sheet thicknes</rdfs:comment>
+        <rdfs:label xml:lang="en">Work Sheet Top Thickness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopWorkSheetBottomInteraction -->
+
+    <owl:Class rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WorkSheetTopWorkSheetBottomInteraction">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PiecePieceInteraction"/>
+        <rdfs:comment xml:lang="en">Interaction Worksheet Top  and Worksheet Bottom</rdfs:comment>
+        <rdfs:label xml:lang="en">WorkSheet Top WorkSheet Bottom Interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#OperationTime -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#OperationTime">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:comment xml:lang="en">A temporal entity with duration.</rdfs:comment>
+        <rdfs:label xml:lang="en">Time:OperationTime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity">
+        <rdfs:comment xml:lang="en">A temporal interval.</rdfs:comment>
+        <rdfs:label xml:lang="en">Time:Termporal Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/ObservableProperty -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/ObservableProperty">
+        <rdfs:comment xml:lang="en">A property that can be observed  with some sensor</rdfs:comment>
+        <rdfs:label xml:lang="en">Observable Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"/>
+        <rdfs:comment xml:lang="en">Sensor - Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a Stimulus</rdfs:comment>
+        <rdfs:label xml:lang="en">Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#AssemblingProcess -->
+
+    <owl:Class rdf:about="https://w3id.org/rgom#AssemblingProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#ManufacturingProcess"/>
+        <rdfs:comment xml:lang="en">Assembling process</rdfs:comment>
+        <rdfs:label xml:lang="en">Assembling Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#ContextualData -->
+
+    <owl:Class rdf:about="https://w3id.org/rgom#ContextualData">
+        <rdfs:comment xml:lang="en">A contextual data provides added value information.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contextual Data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Line -->
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Line">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"/>
+        <rdfs:label>Production Line</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Machine -->
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Machine">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"/>
+        <rdfs:isDefinedBy xml:lang="en">A machine (or mechanical device) is a mechanical structure (made of parts or tools) that uses power to apply forces and control movement to perform an intended action.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Asset</rdfs:label>
+        <rdfs:label xml:lang="en">Device</rdfs:label>
+        <rdfs:label xml:lang="en">Machine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Maintenance -->
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Maintenance">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Process"/>
+        <rdfs:comment xml:lang="en">A process performed to maintain machine or its part</rdfs:comment>
+        <rdfs:label xml:lang="en">Maintenance Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#ManufacturingProcess -->
+
+    <owl:Class rdf:about="https://w3id.org/rgom#ManufacturingProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Process"/>
+        <rdfs:comment xml:lang="en">Manufacturing process</rdfs:comment>
+        <rdfs:label xml:lang="en">Manufacturing Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Part -->
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Part">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"/>
+        <rdfs:comment xml:lang="en">Machine part</rdfs:comment>
+        <rdfs:label xml:lang="en">Machine Part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Process -->
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Process">
+        <rdfs:isDefinedBy xml:lang="en">A process is a series or set of activities that interact to produce a result.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Product -->
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Product">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"/>
+        <rdfs:comment xml:lang="en">Product of an operation</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">A product that is produced as a result of an operation</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Operation Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#WorkStation -->
+
+    <owl:Class rdf:about="https://w3id.org/rgom#WorkStation">
+        <rdfs:subClassOf rdf:resource="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#PhysicalEntity"/>
+        <rdfs:label xml:lang="en">WorkStation</rdfs:label>
+        <rdfs:label xml:lang="en">Workstation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#ElectrodeCapBottom"/>
+            <rdf:Description rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingGunBottom"/>
+            <rdf:Description rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#WeldingRobot"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
