@@ -22,7 +22,7 @@
         <dc:creater xml:lang="en">Muhammad Yahya (University of Galway, Ireland)</dc:creater>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <copyright xml:lang="en">Copyright (c) 2022 Open Applications Group</copyright>
-        <rdfs:comment xml:lang="en">The most recent version of this file will always be in the GitHub repository https://github.com/MuhammadYahta/rswo</rdfs:comment>
+        <rdfs:comment xml:lang="en">The most recent version of this file will always be in the GitHub repository https://github.com/nsai-uio/RSWO</rdfs:comment>
         <rdfs:label xml:lang="en">Resistance Spot Welding Ontology</rdfs:label>
         <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
     </owl:Ontology>
