@@ -18,7 +18,7 @@
      xmlns:s4inma="https://w3id.org/def/saref4inma#"
      xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo">
-        <dc:contributor xml:lang="en">Baifan Zhou, John G. Breslin, Ali intezar,  Evgeny Kharlamov</dc:contributor>
+        <dc:contributor xml:lang="en">Muhammad Yahya, Baifan Zhou, John G. Breslin, Ali intezar,  Evgeny Kharlamov</dc:contributor>
         <dc:creater xml:lang="en">Muhammad Yahya (University of Galway, Ireland)</dc:creater>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <copyright xml:lang="en">Copyright (c) 2022 Open Applications Group</copyright>
