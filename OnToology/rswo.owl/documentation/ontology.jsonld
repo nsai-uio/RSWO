@@ -181,7 +181,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "en",
-    "@value" : "Baifan Zhou, John G. Breslin, Ali intezar,  Evgeny Kharlamov"
+    "@value" : "Muhammad Yahya, Baifan Zhou, John G. Breslin, Ali intezar,  Evgeny Kharlamov"
   } ],
   "http://purl.org/dc/elements/1.1/creater" : [ {
     "@language" : "en",
@@ -196,7 +196,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The most recent version of this file will always be in the GitHub repository https://github.com/MuhammadYahta/rswo"
+    "@value" : "The most recent version of this file will always be in the GitHub repository https://github.com/nsai-uio/RSWO"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
