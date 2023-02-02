@@ -7,7 +7,7 @@
 @base <http://www.rswo.org/muhyah/ontologies/2022/7/rswo#> .
 
 <http://www.rswo.org/muhyah/ontologies/2022/7/rswo> rdf:type owl:Ontology ;
-                                                     <http://purl.org/dc/elements/1.1/contributor> "Baifan Zhou, John G. Breslin, Ali intezar,  Evgeny Kharlamov"@en ;
+                                                     <http://purl.org/dc/elements/1.1/contributor> "Muhammad Yahya, Baifan Zhou, John G. Breslin, Ali intezar,  Evgeny Kharlamov"@en ;
                                                      <http://purl.org/dc/elements/1.1/creater> "Muhammad Yahya (University of Galway, Ireland)"@en ;
                                                      <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                                      :copyright "Copyright (c) 2022 Open Applications Group"@en ;

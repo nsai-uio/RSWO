@@ -10,7 +10,7 @@
      xmlns:rswo="http://www.rswo.org/muhyah/ontologies/2022/7/rswo#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
     <owl:Ontology rdf:about="http://www.rswo.org/muhyah/ontologies/2022/7/rswo">
-        <dc:contributor xml:lang="en">Baifan Zhou, John G. Breslin, Ali intezar,  Evgeny Kharlamov</dc:contributor>
+        <dc:contributor xml:lang="en">Muhammad Yahya, Baifan Zhou, John G. Breslin, Ali intezar,  Evgeny Kharlamov</dc:contributor>
         <dc:creater xml:lang="en">Muhammad Yahya (University of Galway, Ireland)</dc:creater>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <copyright xml:lang="en">Copyright (c) 2022 Open Applications Group</copyright>
